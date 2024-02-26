@@ -1,6 +1,10 @@
+//____IMPORTATION DES FICHIERS SASS____//
+
 @import'./variables';
+@import'./header';
 
-:root {
 
-    $primary-color: #1b1b1b;
+body{
+
+    background-color: $GrisFoncer;
 }
