@@ -2,6 +2,33 @@ body{
     header{
         border: red 1px solid;
         width: 100vw;
-        height: 7rem;
+        height: 6rem;
+       
+        nav{
+
+            width: 100vw;
+            height: 5rem;
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem;
+
+            ul{
+                display: flex;
+                justify-content: space-evenly;
+                width: 30vw;
+
+                li{
+                    list-style: none;
+                }
+            }
+
+            .logo{
+
+                width: 15rem;
+                height: 3rem;
+                background-color: rgba(245, 245, 245, 0.3);
+                
+            }
+        }
     }
 }
