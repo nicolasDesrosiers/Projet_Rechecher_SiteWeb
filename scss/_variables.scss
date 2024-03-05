@@ -1,13 +1,16 @@
+//__Couleurs
 
- //__Couleurs
+$GrisFoncer: #1a1a1a;
+$JaunePale: #a3cc8e;
+$BleuPale: #6f909b;
+$BleuFoncer: #344051;
+$MauveFoncer: #22232c;
+$MauveMoyen: #3e3844;
+$MauvePale: #675c6d;
 
-    $GrisFoncer: #1a1a1a;
-    $JaunePale: #a3cc8e;
-    $BleuPale: #6f909b;
-    $BleuFoncer: #344051;
-    $MauveFoncer: #22232c;
-    $MauveMoyen: #3e3844;
-    $MauvePale: #675c6d;
+//____IMPORTATION DES POILICES DE CARACTÈRE____//
 
-
-
+@font-face {
+  font-family: "Eger";
+  src: url("/font/EGER_1.0/EGER-Regular.otf") format("otf");
+}

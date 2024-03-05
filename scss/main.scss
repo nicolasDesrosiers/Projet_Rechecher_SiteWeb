@@ -1,28 +1,33 @@
 //____IMPORTATION DES FICHIERS SASS____//
 
-@import'./variables';
-@import'./header';
+@import "./variables";
+@import "./header";
+
+//____SASS DE BASE____//
 
 html {
-    scroll-behavior: smooth;
-  
+  scroll-behavior: smooth;
 
-body{
+  a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
 
+  h1 {
+    font-family: "Eger", sans-serif;
+  }
+
+  body {
     background-color: $GrisFoncer;
     color: whitesmoke;
-    
-    section{
 
-        height: 100vh;
-        width: 100vw;
-      
+    section {
+      height: 100vh;
+      width: 100vw;
     }
 
-    #modeles{
-
-        background-color: white;
-      }
-}
-
+    #modeles {
+      background-color: white;
+    }
+  }
 }

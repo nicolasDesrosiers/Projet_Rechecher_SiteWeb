@@ -1,34 +1,115 @@
-body{
-    header{
-        border: red 1px solid;
-        width: 100vw;
-        height: 6rem;
-       
-        nav{
+body {
+  header {
+    height: 100vh;
+    background-image: url("../medias/Background.png");
+    background-position: center;
+    background-size: cover;
 
-            width: 100vw;
-            height: 5rem;
-            display: flex;
-            justify-content: space-between;
-            margin: 1rem;
+    //_____MENU POUR LA NAVIGATION
+    nav {
+      width: 100vw;
+      height: 5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.48);
+      position: fixed;
+      border-bottom: 1px solid whitesmoke;
 
-            ul{
-                display: flex;
-                justify-content: space-evenly;
-                width: 30vw;
+      ul {
+        display: flex;
+        justify-content: space-evenly;
+        width: 40vw;
 
-                li{
-                    list-style: none;
-                }
+        li {
+          list-style: none;
+          width: 5rem;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          position: relative;
+
+          //_____ HOVER LORSQU'ON SURVOL UN LI
+          &:hover i {
+            transform: translateX(-4.5rem);
+            opacity: 1;
+            text-shadow: 0 0 20px rgba(255, 254, 170, 0.7);
+            font-size: 1.5rem;
+          }
+
+          //_____ ICONE DE LA LUNE EN HOVER
+          i {
+            position: absolute;
+            opacity: 0;
+            transition: all 0.1s ease;
+          }
+
+          a {
+            font-family: "Lato", sans-serif;
+            font-weight: 300;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            &:hover {
+              font-weight: bold;
+              text-shadow: 0 0 20px rgba(255, 254, 170, 0.7);
             }
-
-            .logo{
-
-                width: 15rem;
-                height: 3rem;
-                background-color: rgba(245, 245, 245, 0.3);
-                
-            }
+          }
         }
+      }
+
+      //_____ LOGO DU SITE WEB
+      .logo {
+        height: 7rem;
+        img {
+          width: 12rem;
+          height: auto;
+        }
+      }
     }
+
+    //_____ TITRE GÉNÉRAL DANS L'ACCEUIL
+    .titre {
+      display: flex;
+      flex-direction: column;
+      padding-top: 15rem;
+      div {
+        -webkit-text-stroke: 1px;
+        -webkit-text-stroke-color: rgba(245, 245, 245, 0.2);
+        color: $GrisFoncer;
+        font-size: 5rem;
+        text-align: center;
+        word-spacing: 5px;
+        letter-spacing: 5px;
+        font-family: "Eger", sans-serif;
+      }
+      .moon {
+        font-family: "Eger", sans-serif;
+        font-size: 30rem;
+        text-align: center;
+        text-shadow: 0 0 200px rgba(201, 170, 255, 0.9),
+          0 0 20px rgba(255, 254, 170, 0.7);
+        color: whitesmoke;
+        animation: glow 3s infinite alternate;
+      }
+    }
+  }
+}
+
+//_____ANIMATION DU GLOW POUR LE TIRE DE L'ACCEUIL
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 150px rgba(201, 170, 255, 0.7),
+      0 0 15px rgba(255, 254, 170, 0.5);
+  }
+  50% {
+    text-shadow: 0 0 200px rgba(201, 170, 255, 0.8),
+      0 0 20px rgba(255, 254, 170, 0.6);
+  }
+  100% {
+    text-shadow: 0 0 250px rgba(201, 170, 255, 0.9),
+      0 0 25px rgba(255, 254, 170, 0.7);
+  }
 }
