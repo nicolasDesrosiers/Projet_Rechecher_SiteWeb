@@ -1,0 +1,47 @@
+#modeles {
+  background-image: url("../medias/Background.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+
+  .description {
+    background-color: rgba(0, 0, 0, 0.603);
+    position: relative;
+    width: 80%;
+    height: 22rem;
+    border-radius: 2rem;
+    border-bottom-left-radius: 8rem;
+    display: flex;
+    justify-content: flex-end;
+
+    .objet__3d {
+      position: absolute;
+      bottom: -1.5rem;
+      left: -5rem;
+      width: 25rem;
+      height: 25rem;
+      border-radius: 50%;
+      background-color: rgb(50, 42, 73);
+    }
+
+    .info3D {
+      width: 65%;
+      margin: 3rem;
+
+      .titre__objet__3d {
+        font-family: "Eger", sans-serif;
+        font-size: 5rem;
+      }
+      p {
+      }
+      .telechargement {
+        margin-top: 2.5rem;
+        border: 1px solid white;
+        width: 10rem;
+        height: 2rem;
+      }
+    }
+  }
+}

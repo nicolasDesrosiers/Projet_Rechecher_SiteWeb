@@ -34,23 +34,21 @@ html {
             width: 810px;
             padding-top: 1rem;
             .img__creation {
-              width: 200px;
-              height: 200px;
+              width: 250px;
+              height: 250px;
+              background-size: contain;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-color: white;
             }
             .gauche {
               background-image: url("../medias/CroquisPersonnage.png");
-              background-size: cover;
-              background-position: center;
             }
             .millieu {
               background-image: url("../medias/CroquisPiece.png");
-              background-size: cover;
-              background-position: center;
             }
             .droite {
               background-image: url("../medias/CroquisItems.png");
-              background-size: cover;
-              background-position: center;
             }
           }
         }

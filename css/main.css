@@ -1,3 +1,45 @@
+#modeles {
+  background-image: url("../medias/Background.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+#modeles .description {
+  background-color: rgba(0, 0, 0, 0.603);
+  position: relative;
+  width: 80%;
+  height: 22rem;
+  border-radius: 2rem;
+  border-bottom-left-radius: 8rem;
+  display: flex;
+  justify-content: flex-end;
+}
+#modeles .description .objet__3d {
+  position: absolute;
+  bottom: -1.5rem;
+  left: -5rem;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  background-color: rgb(50, 42, 73);
+}
+#modeles .description .info3D {
+  width: 65%;
+  margin: 3rem;
+}
+#modeles .description .info3D .titre__objet__3d {
+  font-family: "Eger", sans-serif;
+  font-size: 5rem;
+}
+#modeles .description .info3D .telechargement {
+  margin-top: 2.5rem;
+  border: 1px solid white;
+  width: 10rem;
+  height: 2rem;
+}
+
 html body #creation {
   background-image: url("../medias/Background.png");
   display: flex;
@@ -32,23 +74,21 @@ html body #creation .conteneur__principal__creation div #banque__photos {
   padding-top: 1rem;
 }
 html body #creation .conteneur__principal__creation div #banque__photos .img__creation {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
 }
 html body #creation .conteneur__principal__creation div #banque__photos .gauche {
   background-image: url("../medias/CroquisPersonnage.png");
-  background-size: cover;
-  background-position: center;
 }
 html body #creation .conteneur__principal__creation div #banque__photos .millieu {
   background-image: url("../medias/CroquisPiece.png");
-  background-size: cover;
-  background-position: center;
 }
 html body #creation .conteneur__principal__creation div #banque__photos .droite {
   background-image: url("../medias/CroquisItems.png");
-  background-size: cover;
-  background-position: center;
 }
 html body #creation .conteneur__principal__creation .principal {
   width: 810px;
@@ -197,9 +237,6 @@ html body p {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   line-height: 1.5;
-}
-html body section {
-  gap: 5rem;
 }
 html body section .titre {
   font-family: "Eger", sans-serif;

@@ -1,5 +1,6 @@
 //____IMPORTATION DES FICHIERS SASS____//
 
+@import "./modeles";
 @import "./creation";
 @import "./variables";
 @import "./header";
@@ -25,7 +26,6 @@ html {
     }
 
     section {
-      gap: 5rem;
       .titre {
         font-family: "Eger", sans-serif;
         font-size: 5rem;
