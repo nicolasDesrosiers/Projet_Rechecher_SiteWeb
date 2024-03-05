@@ -1,5 +1,6 @@
 //____IMPORTATION DES FICHIERS SASS____//
 
+@import "./creation";
 @import "./variables";
 @import "./header";
 
@@ -13,10 +14,6 @@ html {
     color: whitesmoke;
   }
 
-  h1 {
-    font-family: "Eger", sans-serif;
-  }
-
   body {
     background-color: $GrisFoncer;
     color: whitesmoke;
@@ -24,6 +21,16 @@ html {
     section {
       height: 100vh;
       width: 100vw;
+
+      .titre {
+        font-family: "Eger", sans-serif;
+        font-size: 5rem;
+        color: $GrisFoncer;
+        -webkit-text-stroke: 1px;
+        -webkit-text-stroke-color: whitesmoke;
+
+        letter-spacing: 5px;
+      }
     }
 
     #modeles {

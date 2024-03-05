@@ -1,3 +1,43 @@
+html body #creation {
+  background-image: url("../medias/Background.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+html body #creation .conteneur__principal__creation {
+  margin: 5rem;
+  border: 1px red solid;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+html body #creation .conteneur__principal__creation div {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  border: 1px solid greenyellow;
+  width: 50%;
+}
+html body #creation .conteneur__principal__creation div #banque__photos {
+  height: 15rem;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+html body #creation .conteneur__principal__creation div #banque__photos .img__creation {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+}
+html body #creation .conteneur__principal__creation .img__creation__active {
+  width: 500px;
+  height: 600px;
+  background-color: blue;
+}
+
 @font-face {
   font-family: "Eger";
   src: url("/font/EGER_1.0/EGER-Regular.otf") format("otf");
@@ -59,12 +99,12 @@ body header nav .logo img {
   width: 12rem;
   height: auto;
 }
-body header .titre {
+body header .conteneur__titre {
   display: flex;
   flex-direction: column;
   padding-top: 15rem;
 }
-body header .titre div {
+body header .conteneur__titre div {
   -webkit-text-stroke: 1px;
   -webkit-text-stroke-color: rgba(245, 245, 245, 0.2);
   color: #1a1a1a;
@@ -74,7 +114,7 @@ body header .titre div {
   letter-spacing: 5px;
   font-family: "Eger", sans-serif;
 }
-body header .titre .moon {
+body header .conteneur__titre .moon {
   font-family: "Eger", sans-serif;
   font-size: 30rem;
   text-align: center;
@@ -101,9 +141,6 @@ html a {
   text-decoration: none;
   color: whitesmoke;
 }
-html h1 {
-  font-family: "Eger", sans-serif;
-}
 html body {
   background-color: #1a1a1a;
   color: whitesmoke;
@@ -111,6 +148,14 @@ html body {
 html body section {
   height: 100vh;
   width: 100vw;
+}
+html body section .titre {
+  font-family: "Eger", sans-serif;
+  font-size: 5rem;
+  color: #1a1a1a;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: whitesmoke;
+  letter-spacing: 5px;
 }
 html body #modeles {
   background-color: white;

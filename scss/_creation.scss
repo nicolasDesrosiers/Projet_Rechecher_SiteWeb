@@ -1,0 +1,46 @@
+html {
+  body {
+    #creation {
+      background-image: url("../medias/Background.png");
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .conteneur__principal__creation {
+        margin: 5rem;
+        border: 1px red solid;
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+
+        div {
+          display: flex;
+          flex-direction: column;
+          justify-content: end;
+          border: 1px solid greenyellow;
+          width: 50%;
+
+          #banque__photos {
+            height: 15rem;
+            background-color: red;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            .img__creation {
+              width: 200px;
+              height: 200px;
+              background-color: white;
+            }
+          }
+        }
+        .img__creation__active {
+          width: 500px;
+          height: 600px;
+          background-color: blue;
+        }
+      }
+    }
+  }
+}
