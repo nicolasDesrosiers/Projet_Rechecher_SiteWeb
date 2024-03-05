@@ -15,6 +15,7 @@ body {
       background-color: rgba(0, 0, 0, 0.48);
       position: fixed;
       border-bottom: 1px solid whitesmoke;
+      z-index: 100;
 
       ul {
         display: flex;

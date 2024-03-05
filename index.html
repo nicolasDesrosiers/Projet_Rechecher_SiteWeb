@@ -63,16 +63,25 @@
           </p>
 
           <div id="banque__photos">
-            <div class="img__creation"></div>
-            <div class="img__creation"></div>
-            <div class="img__creation"></div>
+            <div class="img__creation gauche"></div>
+            <div class="img__creation millieu"></div>
+            <div class="img__creation droite"></div>
           </div>
         </div>
-        <div class="img__creation__active"></div>
+        <div class="img__creation principal">
+          <i
+            class="fa-solid fa-circle-play fleche__droite"
+            onclick="deplacer('gauche')"
+          ></i>
 
-        <!-- modele 3D -->
-        <!-- <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.54/build/spline-viewer.js"></script><spline-viewer url="https://prod.spline.design/tiJHqFZeNXzCYCE3/scene.splinecode"></spline-viewer>  -->
+          <i
+            class="fa-solid fa-circle-play fleche__gauche"
+            onclick="deplacer('droite')"
+          ></i>
+        </div>
       </div>
+      <!-- modele 3D -->
+      <!-- <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.54/build/spline-viewer.js"></script><spline-viewer url="https://prod.spline.design/tiJHqFZeNXzCYCE3/scene.splinecode"></spline-viewer>  -->
     </section>
 
     <section id="modeles"></section>
