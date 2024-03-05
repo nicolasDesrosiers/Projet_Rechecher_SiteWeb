@@ -5,11 +5,18 @@
   justify-content: center;
   align-items: center;
   gap: 5rem;
+  padding-top: 6rem;
+}
+#modeles .intro__modeles {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
 }
 #modeles .description {
   background-color: rgba(0, 0, 0, 0.603);
   position: relative;
-  width: 80%;
+  width: 60%;
   height: 22rem;
   border-radius: 2rem;
   border-bottom-left-radius: 8rem;
@@ -28,16 +35,47 @@
 #modeles .description .info3D {
   width: 65%;
   margin: 3rem;
+  text-align: right;
 }
 #modeles .description .info3D .titre__objet__3d {
   font-family: "Eger", sans-serif;
   font-size: 5rem;
+}
+#modeles .description .info3D p {
+  padding-left: 5rem;
 }
 #modeles .description .info3D .telechargement {
   margin-top: 2.5rem;
   border: 1px solid white;
   width: 10rem;
   height: 2rem;
+  position: absolute;
+  right: 3rem;
+  bottom: 2rem;
+}
+#modeles #inverse {
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 8rem;
+  justify-content: flex-start;
+}
+#modeles #inverse .objet__3d__inverse {
+  position: absolute;
+  bottom: -1.5rem;
+  right: -5rem;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  background-color: rgb(50, 42, 73);
+}
+#modeles #inverse .info3D {
+  text-align: left;
+}
+#modeles #inverse .info3D p {
+  padding-left: 0;
+  padding-right: 5rem;
+}
+#modeles #inverse .info3D .telechargement {
+  left: 3rem;
 }
 
 html body #creation {
