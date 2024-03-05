@@ -1,6 +1,5 @@
 body {
   header {
-    height: 100vh;
     background-image: url("../medias/Background.png");
     background-position: center;
     background-size: cover;
@@ -74,7 +73,7 @@ body {
     .conteneur__titre {
       display: flex;
       flex-direction: column;
-      padding-top: 15rem;
+      padding-top: 7rem;
       div {
         -webkit-text-stroke: 1px;
         -webkit-text-stroke-color: rgba(245, 245, 245, 0.2);
@@ -93,6 +92,17 @@ body {
           0 0 20px rgba(255, 254, 170, 0.7);
         color: whitesmoke;
         animation: glow 3s infinite alternate;
+      }
+    }
+
+    .synopsis {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        width: 60%;
       }
     }
   }

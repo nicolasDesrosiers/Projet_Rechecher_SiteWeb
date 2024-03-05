@@ -3,25 +3,32 @@ html body #creation {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 6rem;
 }
 html body #creation .conteneur__principal__creation {
-  margin: 5rem;
+  margin: 1rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 5rem;
+  align-items: center;
 }
 html body #creation .conteneur__principal__creation div {
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  width: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+html body #creation .conteneur__principal__creation div .titre {
+  width: 100%;
+  display: block;
 }
 html body #creation .conteneur__principal__creation div #banque__photos {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
+  width: 810px;
   padding-top: 1rem;
 }
 html body #creation .conteneur__principal__creation div #banque__photos .img__creation {
@@ -29,40 +36,44 @@ html body #creation .conteneur__principal__creation div #banque__photos .img__cr
   height: 200px;
 }
 html body #creation .conteneur__principal__creation div #banque__photos .gauche {
-  background-image: url("../medias/Illustration_sans_titre.png");
+  background-image: url("../medias/CroquisPersonnage.png");
   background-size: cover;
   background-position: center;
 }
 html body #creation .conteneur__principal__creation div #banque__photos .millieu {
-  background-image: url("../medias/fleche.png");
+  background-image: url("../medias/CroquisPiece.png");
   background-size: cover;
   background-position: center;
 }
 html body #creation .conteneur__principal__creation div #banque__photos .droite {
-  background-image: url("../medias/Logo.png");
+  background-image: url("../medias/CroquisItems.png");
   background-size: cover;
   background-position: center;
 }
 html body #creation .conteneur__principal__creation .principal {
-  width: 500px;
-  height: 600px;
+  width: 810px;
+  height: 420px;
   background-image: url("../medias/MoodBoard.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  padding-top: 9rem;
   position: relative;
 }
-html body #creation .conteneur__principal__creation .principal .fleche__droite {
-  font-size: 2.5rem;
+html body #creation .conteneur__principal__creation .principal i {
+  font-size: 2.3rem;
   position: absolute;
-  right: -1.9rem;
   top: 50%;
+  transition: all 0.2s ease-in-out;
+}
+html body #creation .conteneur__principal__creation .principal i:hover {
+  text-shadow: 0 0 20px rgba(255, 254, 170, 0.7);
+}
+html body #creation .conteneur__principal__creation .principal .fleche__droite {
+  right: -2.5rem;
 }
 html body #creation .conteneur__principal__creation .principal .fleche__gauche {
-  font-size: 2.5rem;
-  position: absolute;
-  left: -1.9rem;
-  top: 50%;
+  left: -2.5rem;
   transform: rotate(180deg);
 }
 
@@ -71,7 +82,6 @@ html body #creation .conteneur__principal__creation .principal .fleche__gauche {
   src: url("/font/EGER_1.0/EGER-Regular.otf") format("otf");
 }
 body header {
-  height: 100vh;
   background-image: url("../medias/Background.png");
   background-position: center;
   background-size: cover;
@@ -131,7 +141,7 @@ body header nav .logo img {
 body header .conteneur__titre {
   display: flex;
   flex-direction: column;
-  padding-top: 15rem;
+  padding-top: 7rem;
 }
 body header .conteneur__titre div {
   -webkit-text-stroke: 1px;
@@ -150,6 +160,15 @@ body header .conteneur__titre .moon {
   text-shadow: 0 0 200px rgba(201, 170, 255, 0.9), 0 0 20px rgba(255, 254, 170, 0.7);
   color: whitesmoke;
   animation: glow 3s infinite alternate;
+}
+body header .synopsis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body header .synopsis p {
+  width: 60%;
 }
 
 @keyframes glow {
@@ -174,9 +193,13 @@ html body {
   background-color: #1a1a1a;
   color: whitesmoke;
 }
+html body p {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+}
 html body section {
-  height: 100vh;
-  width: 100vw;
+  gap: 5rem;
 }
 html body section .titre {
   font-family: "Eger", sans-serif;

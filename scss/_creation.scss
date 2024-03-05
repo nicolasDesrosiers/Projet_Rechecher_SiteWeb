@@ -5,68 +5,80 @@ html {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      padding-top: 6rem;
 
       .conteneur__principal__creation {
-        margin: 5rem;
+        margin: 1rem;
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        gap: 5rem;
+        align-items: center;
 
         div {
           display: flex;
           flex-direction: column;
-          justify-content: end;
-          width: 50%;
+          justify-content: center;
+          align-items: center;
+          width: 60%;
+
+          .titre {
+            width: 100%;
+            display: block;
+          }
 
           #banque__photos {
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
             align-items: center;
-            width: 100%;
+            width: 810px;
             padding-top: 1rem;
             .img__creation {
               width: 200px;
               height: 200px;
             }
             .gauche {
-              background-image: url("../medias/Illustration_sans_titre.png");
+              background-image: url("../medias/CroquisPersonnage.png");
               background-size: cover;
               background-position: center;
             }
             .millieu {
-              background-image: url("../medias/fleche.png");
+              background-image: url("../medias/CroquisPiece.png");
               background-size: cover;
               background-position: center;
             }
             .droite {
-              background-image: url("../medias/Logo.png");
+              background-image: url("../medias/CroquisItems.png");
               background-size: cover;
               background-position: center;
             }
           }
         }
         .principal {
-          width: 500px;
-          height: 600px;
+          width: 810px;
+          height: 420px;
           background-image: url("../medias/MoodBoard.png");
           background-size: contain;
           background-repeat: no-repeat;
           background-position: center;
+          padding-top: 9rem;
 
           position: relative;
 
-          .fleche__droite {
-            font-size: 2.5rem;
+          i {
+            font-size: 2.3rem;
             position: absolute;
-            right: -1.9rem;
             top: 50%;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+              text-shadow: 0 0 20px rgba(255, 254, 170, 0.7);
+            }
+          }
+          .fleche__droite {
+            right: -2.5rem;
           }
           .fleche__gauche {
-            font-size: 2.5rem;
-            position: absolute;
-            left: -1.9rem;
-            top: 50%;
+            left: -2.5rem;
             transform: rotate(180deg);
           }
         }

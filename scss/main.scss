@@ -18,10 +18,14 @@ html {
     background-color: $GrisFoncer;
     color: whitesmoke;
 
-    section {
-      height: 100vh;
-      width: 100vw;
+    p {
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      line-height: 1.5;
+    }
 
+    section {
+      gap: 5rem;
       .titre {
         font-family: "Eger", sans-serif;
         font-size: 5rem;
