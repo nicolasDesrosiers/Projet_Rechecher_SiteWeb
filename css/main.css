@@ -21,6 +21,18 @@ body #blender .technologies .gif__outil {
   height: 200px;
   background-color: rgba(255, 255, 255, 0.35);
 }
+@media screen and (max-width: 1200px) {
+  body #blender .technologies {
+    flex-direction: column;
+  }
+  body #blender .technologies .outil div {
+    display: flex;
+    gap: 5rem;
+  }
+  body #blender .technologies .outil div p {
+    width: 50%;
+  }
+}
 body #blender .rendu {
   display: flex;
   align-items: center;
@@ -33,6 +45,12 @@ body #blender .rendu .wrapper {
   margin-top: 6rem;
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+@media screen and (max-width: 1000px) {
+  body #blender .rendu .wrapper {
+    width: 700px;
+    height: 425px;
+  }
 }
 body #blender .rendu .wrapper .before,
 body #blender .rendu .wrapper .after {

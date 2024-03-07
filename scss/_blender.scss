@@ -24,6 +24,20 @@ body {
         height: 200px;
         background-color: rgba(255, 255, 255, 0.35);
       }
+
+      @media screen and (max-width: 1200px) {
+        flex-direction: column;
+        .outil {
+          div {
+            display: flex;
+            gap: 5rem;
+
+            p {
+              width: 50%;
+            }
+          }
+        }
+      }
     }
 
     .rendu {
@@ -39,6 +53,11 @@ body {
         overflow: hidden;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
           0 6px 6px rgba(0, 0, 0, 0.23);
+
+        @media screen and (max-width: 1000px) {
+          width: 700px;
+          height: 425px;
+        }
 
         .before,
         .after {
