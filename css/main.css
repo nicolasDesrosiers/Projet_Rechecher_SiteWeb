@@ -1,3 +1,106 @@
+body #blender {
+  background-image: url("../medias/Background.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6rem;
+}
+body #blender .titre {
+  width: 60%;
+}
+body #blender .intro__blender {
+  width: 60%;
+}
+body #blender .technologies {
+  display: flex;
+  width: 60%;
+  gap: 1rem;
+}
+body #blender .technologies .gif__outil {
+  width: 300px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.35);
+}
+body #blender .rendu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body #blender .rendu .wrapper {
+  width: 900px;
+  height: 550px;
+  position: relative;
+  margin-top: 6rem;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+body #blender .rendu .wrapper .before,
+body #blender .rendu .wrapper .after {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+body #blender .rendu .wrapper .before .content-image,
+body #blender .rendu .wrapper .after .content-image {
+  height: 100%;
+}
+body #blender .rendu .wrapper .after {
+  width: 125px;
+}
+body #blender .rendu .wrapper .scroller {
+  width: 30px;
+  position: absolute;
+  left: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: transparent;
+  opacity: 0.9;
+  pointer-events: auto;
+  cursor: pointer;
+}
+body #blender .rendu .wrapper .scroller:hover {
+  opacity: 1;
+}
+body #blender .rendu .wrapper .scroller .scroller__thumb {
+  width: 100%;
+  height: 100%;
+  padding: 6px;
+  border: 6px solid white;
+  border-radius: 50%;
+}
+body #blender .rendu .wrapper .scroller:before,
+body #blender .rendu .wrapper .scroller:after {
+  content: " ";
+  display: block;
+  width: 7px;
+  height: 9999px;
+  position: absolute;
+  left: 88%;
+  margin-left: -3.5px;
+  z-index: 30;
+  transition: 0.1s;
+  background-color: whitesmoke;
+}
+body #blender .rendu .wrapper .scroller:before {
+  top: 90%;
+}
+body #blender .rendu .wrapper .scroller:after {
+  bottom: 100%;
+}
+body #blender .rendu .wrapper .scrolling {
+  pointer-events: none;
+  opacity: 1;
+}
+
 #modeles {
   background-image: url("../medias/Background.png");
   display: flex;
