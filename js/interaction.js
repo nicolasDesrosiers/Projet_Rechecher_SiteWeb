@@ -23,6 +23,10 @@
 //});
 //}
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//___________________________________________ FONCTION ENLEVER LE LOGO SPLINE ___________________________________________//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 window.onload = function () {
   var shadowRoot = document.querySelector("spline-viewer").shadowRoot;
   shadowRoot.querySelector("#logo").remove();
@@ -79,20 +83,21 @@ function deplacer(direction) {
   }
 }
 
-// I hope this over-commenting helps. Let's do this!
-// Let's use the 'active' variable to let us know when we're using it
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//_________________________________________ FONCTION POUR LE RENDU AVANT/APRES __________________________________________//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Variable 'active' pour savoir quand nous l'utilisons
 let active = false;
 
-// First we'll have to set up our event listeners
-// We want to watch for clicks on our scroller
+// Surveiller les clics sur notre barre de défilement
 document.querySelector(".scroller").addEventListener("mousedown", function () {
   active = true;
-  // Add our scrolling class so the scroller has full opacity while active
+  // Classe de défilement pour que la barre de défilement ait une opacité maximale lorsqu'elle est active
   document.querySelector(".scroller").classList.add("scrolling");
 });
-// We also want to watch the body for changes to the state,
-// like moving around and releasing the click
-// so let's set up our event listeners
+
+// Configuration des écouteurs d'événements
 document.body.addEventListener("mouseup", function () {
   active = false;
   document.querySelector(".scroller").classList.remove("scrolling");
@@ -102,18 +107,17 @@ document.body.addEventListener("mouseleave", function () {
   document.querySelector(".scroller").classList.remove("scrolling");
 });
 
-// Let's figure out where their mouse is at
+// Déterminer où se trouve la souris
 document.body.addEventListener("mousemove", function (e) {
   if (!active) return;
-  // Their mouse is here...
+  // La souris est ici
   let x = e.pageX;
-  // but we want it relative to our wrapper
+  // mais elle est relative au conteneur
   x -= document.querySelector(".wrapper").getBoundingClientRect().left;
-  // Okay let's change our state
   scrollIt(x);
 });
 
-// Let's use this function
+// Fonction pour le scroll
 function scrollIt(x) {
   let transform = Math.max(
     0,
@@ -123,12 +127,11 @@ function scrollIt(x) {
   document.querySelector(".scroller").style.left = transform - 25 + "px";
 }
 
-// Let's set our opening state based off the width,
-// we want to show a bit of both images so the user can see what's going on
+// État initial en fonction de la largeur,
+// Montrer un peu des deux images pour que l'utilisateur puisse voir ce qui se passe
 scrollIt(150);
 
-// And finally let's repeat the process for touch events
-// first our middle scroller...
+// Répétitions du processus pour les événements tactiles
 document.querySelector(".scroller").addEventListener("touchstart", function () {
   active = true;
   document.querySelector(".scroller").classList.add("scrolling");
@@ -140,4 +143,42 @@ document.body.addEventListener("touchend", function () {
 document.body.addEventListener("touchcancel", function () {
   active = false;
   document.querySelector(".scroller").classList.remove("scrolling");
+});
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//_________________________________________ FONCTION POUR LES BOITES MODALES ______________________________________________//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Sélectionne tous les éléments avec la classe gif__outil
+const gifOutils = document.querySelectorAll(".gif__outil");
+
+// Ajoute un gestionnaire d'événements à chaque élément .gif__outil
+gifOutils.forEach((gifOutil) => {
+  gifOutil.addEventListener("click", () => {
+    // Récupère l'identifiant de la boîte modale à ouvrir
+    const modalId = gifOutil.getAttribute("data-modal");
+    // Affiche la boîte modale correspondante
+    const modal = document.querySelector("#" + modalId); // Sélectionne par classe
+    console.log(modal);
+    modal.style.display = "block";
+  });
+});
+// Sélectionne tous les éléments pour fermer la boîte modale
+const closeButtons = document.querySelectorAll(".close");
+
+// Ajoute un gestionnaire d'événements à chaque bouton de fermeture
+closeButtons.forEach((closeButton) => {
+  closeButton.addEventListener("click", () => {
+    // Sélectionne la boîte modale parente du bouton de fermeture
+    const modal = closeButton.closest(".modal");
+    // Cache la boîte modale
+    modal.style.display = "none";
+  });
+});
+
+// Ferme la boîte modale si l'utilisateur clique en dehors de celle-ci
+window.addEventListener("click", (event) => {
+  if (event.target.classList.contains("modal")) {
+    event.target.style.display = "none";
+  }
 });
