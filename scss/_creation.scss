@@ -52,6 +52,7 @@ html {
             }
           }
         }
+
         .principal {
           width: 810px;
           height: 420px;
@@ -78,6 +79,24 @@ html {
           .fleche__gauche {
             left: -2.5rem;
             transform: rotate(180deg);
+          }
+        }
+
+        @media screen and (max-width: 1000px) {
+          div {
+            #banque__photos {
+              width: 600px;
+
+              .img__creation {
+                width: 150px;
+                height: 150px;
+              }
+            }
+          }
+
+          .principal {
+            width: 580px;
+            height: 260px;
           }
         }
       }

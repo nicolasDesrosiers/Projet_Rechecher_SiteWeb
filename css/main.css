@@ -286,6 +286,19 @@ html body #creation .conteneur__principal__creation .principal .fleche__gauche {
   left: -2.5rem;
   transform: rotate(180deg);
 }
+@media screen and (max-width: 1000px) {
+  html body #creation .conteneur__principal__creation div #banque__photos {
+    width: 600px;
+  }
+  html body #creation .conteneur__principal__creation div #banque__photos .img__creation {
+    width: 150px;
+    height: 150px;
+  }
+  html body #creation .conteneur__principal__creation .principal {
+    width: 580px;
+    height: 260px;
+  }
+}
 
 @font-face {
   font-family: "Eger";
