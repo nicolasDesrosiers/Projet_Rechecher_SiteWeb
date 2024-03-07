@@ -1,5 +1,4 @@
 body #blender {
-  background-image: url("../medias/Background.png");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,7 +13,7 @@ body #blender .intro__blender {
 }
 body #blender .technologies {
   display: flex;
-  width: 60%;
+  width: 80%;
   gap: 1rem;
 }
 body #blender .technologies .gif__outil {
@@ -119,7 +118,7 @@ body #blender .rendu .wrapper .scrolling {
 #modeles .description {
   background-color: rgba(0, 0, 0, 0.603);
   position: relative;
-  width: 60%;
+  width: 80%;
   height: 22rem;
   border-radius: 2rem;
   border-bottom-left-radius: 8rem;
@@ -145,16 +144,10 @@ body #blender .rendu .wrapper .scrolling {
   font-size: 5rem;
 }
 #modeles .description .info3D p {
-  padding-left: 5rem;
+  padding-left: 6rem;
 }
-#modeles .description .info3D .telechargement {
-  margin-top: 2.5rem;
-  border: 1px solid white;
-  width: 10rem;
-  height: 2rem;
-  position: absolute;
-  right: 3rem;
-  bottom: 2rem;
+#modeles .description .info3D a i {
+  font-size: 2rem;
 }
 #modeles #inverse {
   border-bottom-left-radius: 2rem;
@@ -175,10 +168,46 @@ body #blender .rendu .wrapper .scrolling {
 }
 #modeles #inverse .info3D p {
   padding-left: 0;
-  padding-right: 5rem;
+  padding-right: 6rem;
 }
 #modeles #inverse .info3D .telechargement {
   left: 3rem;
+}
+@media screen and (max-width: 1200px) {
+  #modeles .description {
+    width: 35rem;
+    height: 45rem;
+    border-bottom-left-radius: 2rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  #modeles .description .objet__3d {
+    top: -3rem;
+    left: 5rem;
+  }
+  #modeles .description .info3D {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  #modeles .description .info3D p {
+    padding-left: 0;
+  }
+  #modeles #inverse {
+    border-bottom-right-radius: 2rem;
+  }
+  #modeles #inverse .objet__3d__inverse {
+    top: -3rem;
+    left: 5rem;
+  }
+  #modeles #inverse .info3D {
+    text-align: center;
+  }
+  #modeles #inverse .info3D p {
+    padding-right: 0;
+  }
 }
 
 html body #creation {
@@ -348,8 +377,23 @@ body header .synopsis {
   justify-content: center;
   align-items: center;
 }
+body header .synopsis i {
+  position: absolute;
+  font-size: 5rem;
+  opacity: 0.1;
+}
+body header .synopsis .fa-quote-left {
+  top: -3rem;
+  left: -3rem;
+}
+body header .synopsis .fa-quote-right {
+  bottom: -3rem;
+  right: -3rem;
+}
 body header .synopsis p {
   width: 60%;
+  position: relative;
+  font-weight: 500;
 }
 
 @keyframes glow {

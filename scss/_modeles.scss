@@ -17,7 +17,7 @@
   .description {
     background-color: rgba(0, 0, 0, 0.603);
     position: relative;
-    width: 60%;
+    width: 80%;
     height: 22rem;
     border-radius: 2rem;
     border-bottom-left-radius: 8rem;
@@ -44,19 +44,16 @@
         font-size: 5rem;
       }
       p {
-        padding-left: 5rem;
+        padding-left: 6rem;
       }
-      .telechargement {
-        margin-top: 2.5rem;
-        border: 1px solid white;
-        width: 10rem;
-        height: 2rem;
-        position: absolute;
-        right: 3rem;
-        bottom: 2rem;
+      a {
+        i {
+          font-size: 2rem;
+        }
       }
     }
   }
+
   #inverse {
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 8rem;
@@ -77,10 +74,53 @@
 
       p {
         padding-left: 0;
-        padding-right: 5rem;
+        padding-right: 6rem;
       }
       .telechargement {
         left: 3rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .description {
+      width: 35rem;
+      height: 45rem;
+      border-bottom-left-radius: 2rem;
+      display: flex;
+      justify-content: space-around;
+
+      .objet__3d {
+        top: -3rem;
+        left: 5rem;
+      }
+
+      .info3D {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+        p {
+          padding-left: 0;
+        }
+      }
+    }
+    #inverse {
+      border-bottom-right-radius: 2rem;
+
+      .objet__3d__inverse {
+        top: -3rem;
+        left: 5rem;
+      }
+
+      .info3D {
+        text-align: center;
+
+        p {
+          padding-right: 0;
+        }
       }
     }
   }
