@@ -12,6 +12,10 @@
     display: flex;
     flex-direction: column;
     text-align: right;
+
+    @media screen and (max-width: 750px) {
+      width: 80%;
+    }
   }
 
   .description {
@@ -81,8 +85,59 @@
       }
     }
   }
+}
 
-  @media screen and (max-width: 1200px) {
+@media screen and (max-width: 700px) {
+  body {
+    #modeles {
+      .description {
+        width: 24rem;
+        height: 45rem;
+        border-bottom-left-radius: 2rem;
+        display: flex;
+        justify-content: space-around;
+
+        .objet__3d {
+          top: -3rem;
+          left: -0.5rem;
+          transform: scale(0.9);
+        }
+
+        .info3D {
+          width: 100%;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: end;
+
+          p {
+            padding-left: 0;
+          }
+        }
+      }
+      #inverse {
+        border-bottom-right-radius: 2rem;
+
+        .objet__3d__inverse {
+          top: -3rem;
+          left: -0.5rem;
+          transform: scale(0.9);
+        }
+
+        .info3D {
+          text-align: center;
+
+          p {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #modeles {
     .description {
       width: 35rem;
       height: 45rem;
@@ -93,6 +148,7 @@
       .objet__3d {
         top: -3rem;
         left: 5rem;
+        transform: scale(1);
       }
 
       .info3D {
@@ -113,6 +169,7 @@
       .objet__3d__inverse {
         top: -3rem;
         left: 5rem;
+        transform: scale(1);
       }
 
       .info3D {

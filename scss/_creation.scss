@@ -82,6 +82,16 @@ html {
           }
         }
 
+        @media screen and (max-width: 750px) {
+          div {
+            width: 80%;
+            #banque__photos {
+              .img__creation {
+              }
+            }
+          }
+        }
+
         @media screen and (max-width: 1000px) {
           div {
             #banque__photos {

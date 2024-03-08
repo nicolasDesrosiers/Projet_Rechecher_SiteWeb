@@ -16,6 +16,11 @@ body #blender .technologies {
   width: 80%;
   gap: 1rem;
 }
+@media screen and (max-width: 750px) {
+  body #blender .technologies .outil div {
+    flex-direction: column-reverse;
+  }
+}
 body #blender .technologies .outil div .modal {
   display: none;
   position: fixed;
@@ -50,18 +55,6 @@ body #blender .technologies .outil div .gif__outil {
   width: 300px;
   height: 200px;
   background-color: rgba(255, 255, 255, 0.35);
-}
-@media screen and (max-width: 1200px) {
-  body #blender .technologies {
-    flex-direction: column;
-  }
-  body #blender .technologies .outil div {
-    display: flex;
-    gap: 5rem;
-  }
-  body #blender .technologies .outil div p {
-    width: 50%;
-  }
 }
 body #blender .rendu {
   display: flex;
@@ -147,6 +140,52 @@ body #blender .rendu .wrapper .scrolling {
   pointer-events: none;
   opacity: 1;
 }
+@media screen and (max-width: 1200px) {
+  body #blender .titre {
+    width: 80%;
+  }
+  body #blender .intro__blender {
+    width: 80%;
+  }
+  body #blender .technologies {
+    flex-direction: column;
+  }
+  body #blender .technologies .outil {
+    text-align: left;
+  }
+  body #blender .technologies .outil div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  body #blender .technologies .outil div p {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 750px) {
+  body #blender .titre {
+    width: 80%;
+  }
+  body #blender .intro__blender {
+    width: 80%;
+  }
+  body #blender .technologies {
+    flex-direction: column;
+  }
+  body #blender .technologies .outil {
+    text-align: center;
+  }
+  body #blender .technologies .outil div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  body #blender .technologies .outil div p {
+    width: 100%;
+  }
+}
 
 #modeles {
   background-image: url("../medias/Background.png");
@@ -162,6 +201,11 @@ body #blender .rendu .wrapper .scrolling {
   display: flex;
   flex-direction: column;
   text-align: right;
+}
+@media screen and (max-width: 750px) {
+  #modeles .intro__modeles {
+    width: 80%;
+  }
 }
 #modeles .description {
   background-color: rgba(0, 0, 0, 0.603);
@@ -221,7 +265,46 @@ body #blender .rendu .wrapper .scrolling {
 #modeles #inverse .info3D .telechargement {
   left: 3rem;
 }
-@media screen and (max-width: 1200px) {
+
+@media screen and (max-width: 700px) {
+  body #modeles .description {
+    width: 24rem;
+    height: 45rem;
+    border-bottom-left-radius: 2rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  body #modeles .description .objet__3d {
+    top: -3rem;
+    left: -0.5rem;
+    transform: scale(0.9);
+  }
+  body #modeles .description .info3D {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  body #modeles .description .info3D p {
+    padding-left: 0;
+  }
+  body #modeles #inverse {
+    border-bottom-right-radius: 2rem;
+  }
+  body #modeles #inverse .objet__3d__inverse {
+    top: -3rem;
+    left: -0.5rem;
+    transform: scale(0.9);
+  }
+  body #modeles #inverse .info3D {
+    text-align: center;
+  }
+  body #modeles #inverse .info3D p {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 1000px) {
   #modeles .description {
     width: 35rem;
     height: 45rem;
@@ -232,6 +315,7 @@ body #blender .rendu .wrapper .scrolling {
   #modeles .description .objet__3d {
     top: -3rem;
     left: 5rem;
+    transform: scale(1);
   }
   #modeles .description .info3D {
     width: 100%;
@@ -249,6 +333,7 @@ body #blender .rendu .wrapper .scrolling {
   #modeles #inverse .objet__3d__inverse {
     top: -3rem;
     left: 5rem;
+    transform: scale(1);
   }
   #modeles #inverse .info3D {
     text-align: center;
@@ -257,7 +342,6 @@ body #blender .rendu .wrapper .scrolling {
     padding-right: 0;
   }
 }
-
 html body #creation {
   background-image: url("../medias/Background.png");
   display: flex;
@@ -333,6 +417,11 @@ html body #creation .conteneur__principal__creation .principal .fleche__droite {
 html body #creation .conteneur__principal__creation .principal .fleche__gauche {
   left: -2.5rem;
   transform: rotate(180deg);
+}
+@media screen and (max-width: 750px) {
+  html body #creation .conteneur__principal__creation div {
+    width: 80%;
+  }
 }
 @media screen and (max-width: 1000px) {
   html body #creation .conteneur__principal__creation div #banque__photos {
@@ -432,6 +521,17 @@ body header .conteneur__titre .moon {
   color: whitesmoke;
   animation: glow 3s infinite alternate;
 }
+@media screen and (max-width: 750px) {
+  body header .conteneur__titre {
+    padding-top: 8rem;
+  }
+  body header .conteneur__titre div {
+    font-size: 3rem;
+  }
+  body header .conteneur__titre .moon {
+    font-size: 17rem;
+  }
+}
 body header .synopsis {
   display: flex;
   flex-direction: column;
@@ -455,6 +555,19 @@ body header .synopsis p {
   width: 60%;
   position: relative;
   font-weight: 500;
+}
+@media screen and (max-width: 750px) {
+  body header .synopsis .fa-quote-left {
+    left: -1rem;
+  }
+  body header .synopsis .fa-quote-right {
+    right: -1rem;
+  }
+  body header .synopsis p {
+    width: 80%;
+    font-size: 0.9rem;
+    text-align: center;
+  }
 }
 
 @keyframes glow {

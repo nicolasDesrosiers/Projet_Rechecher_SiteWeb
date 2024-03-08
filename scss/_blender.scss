@@ -21,6 +21,9 @@ body {
 
       .outil {
         div {
+          @media screen and (max-width: 750px) {
+            flex-direction: column-reverse;
+          }
           .modal {
             display: none; // Cachée par défaut
             position: fixed;
@@ -60,20 +63,6 @@ body {
             width: 300px;
             height: 200px;
             background-color: rgba(255, 255, 255, 0.35);
-          }
-        }
-      }
-
-      @media screen and (max-width: 1200px) {
-        flex-direction: column;
-        .outil {
-          div {
-            display: flex;
-            gap: 5rem;
-
-            p {
-              width: 50%;
-            }
           }
         }
       }
@@ -169,6 +158,62 @@ body {
           pointer-events: none;
           opacity: 1;
           // z-index: 1;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    #blender {
+      .titre {
+        width: 80%;
+      }
+      .intro__blender {
+        width: 80%;
+      }
+      .technologies {
+        flex-direction: column;
+        .outil {
+          text-align: left;
+          div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+
+            p {
+              width: 80%;
+            }
+
+            .gif__outil {
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 750px) {
+    #blender {
+      .titre {
+        width: 80%;
+      }
+      .intro__blender {
+        width: 80%;
+      }
+      .technologies {
+        flex-direction: column;
+        .outil {
+          text-align: center;
+          div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+
+            p {
+              width: 100%;
+            }
+          }
         }
       }
     }

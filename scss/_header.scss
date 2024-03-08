@@ -93,6 +93,16 @@ body {
         color: whitesmoke;
         animation: glow 3s infinite alternate;
       }
+
+      @media screen and (max-width: 750px) {
+        padding-top: 8rem;
+        div {
+          font-size: 3rem;
+        }
+        .moon {
+          font-size: 17rem;
+        }
+      }
     }
 
     .synopsis {
@@ -119,6 +129,21 @@ body {
         width: 60%;
         position: relative;
         font-weight: 500;
+      }
+
+      @media screen and (max-width: 750px) {
+        .fa-quote-left {
+          left: -1rem;
+        }
+        .fa-quote-right {
+          right: -1rem;
+        }
+
+        p {
+          width: 80%;
+          font-size: 0.9rem;
+          text-align: center;
+        }
       }
     }
   }
