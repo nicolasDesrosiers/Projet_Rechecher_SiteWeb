@@ -185,6 +185,10 @@ body #blender .rendu .wrapper .scrolling {
   body #blender .technologies .outil div p {
     width: 100%;
   }
+  body #blender .rendu .wrapper {
+    width: 440px;
+    height: 270px;
+  }
 }
 
 #modeles {
@@ -459,8 +463,8 @@ body header nav {
 }
 body header nav ul {
   display: flex;
-  justify-content: space-evenly;
-  width: 40vw;
+  justify-content: space-around;
+  width: 50vw;
 }
 body header nav ul li {
   list-style: none;
