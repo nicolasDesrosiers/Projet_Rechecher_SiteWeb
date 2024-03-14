@@ -1,9 +1,12 @@
+/* Styles généraux pour le body */
 body {
+  /* Styles pour le footer */
   footer {
     background-image: url("../medias/Background.png");
     height: 20rem;
     position: relative;
 
+    /* Styles pour les informations du footer */
     .info__footer {
       position: absolute;
       display: flex;
@@ -13,12 +16,14 @@ body {
       width: 90%;
       height: 80%;
 
+      /* Styles pour le titre dans le footer */
       h2 {
         font-family: "Lato", sans-serif;
         font-size: 1.5rem;
         font-weight: 300;
       }
 
+      /* Styles pour les icônes de réseaux sociaux dans le footer */
       .sociaux {
         display: flex;
         justify-content: space-evenly;
@@ -29,6 +34,8 @@ body {
         bottom: 0;
         left: 2rem;
         height: 30%;
+
+        /* Styles pour les liens des icônes */
         a {
           opacity: 0.5;
           &:hover {
@@ -41,6 +48,8 @@ body {
         }
       }
     }
+
+    /* Styles pour l'enveloppe des animations */
     #wrap {
       width: 100%;
       height: 100%;
@@ -48,13 +57,15 @@ body {
       margin: 0 auto 0 auto;
       overflow: hidden;
 
+      /* Styles pour les éclairages dans l'enveloppe */
       #lightings {
         bottom: -60px;
         position: absolute;
         width: 100%;
 
+        /* Styles pour les différentes sections des éclairages */
         section {
-          /*border-radius*/
+          /* Bordure arrondie */
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
           border-radius: 50%;
@@ -63,44 +74,54 @@ body {
           position: relative;
           margin: auto;
         }
+
+        /* Styles pour la première section d'éclairage */
         #one {
-          /*animation*/
+          /* Animation */
           -webkit-animation: one 5s ease-in-out infinite alternate;
           -moz-animation: one 5s ease-in-out infinite alternate;
           -ms-animation: one 5s ease-in-out infinite alternate;
           -o-animation: one 5s ease-in-out infinite alternate;
           animation: one 5s ease-in-out infinite alternate;
         }
+
+        /* Styles pour la deuxième section d'éclairage */
         #two {
           width: 90%;
-          /*animation*/
+          /* Animation */
           -webkit-animation: two 4s ease-in-out infinite alternate;
           -moz-animation: two 4s ease-in-out infinite alternate;
           -ms-animation: two 4s ease-in-out infinite alternate;
           -o-animation: two 4s ease-in-out infinite alternate;
           animation: two 4s ease-in-out infinite alternate;
         }
+
+        /* Styles pour la troisième section d'éclairage */
         #three {
           width: 80%;
-          /*animation*/
+          /* Animation */
           -webkit-animation: three 3s ease-in-out infinite alternate;
           -moz-animation: three 3s ease-in-out infinite alternate;
           -ms-animation: three 3s ease-in-out infinite alternate;
           -o-animation: three 3s ease-in-out infinite alternate;
           animation: three 3s ease-in-out infinite alternate;
         }
+
+        /* Styles pour la quatrième section d'éclairage */
         #four {
           width: 70%;
-          /*animation*/
+          /* Animation */
           -webkit-animation: four 2s ease-in-out infinite alternate;
           -moz-animation: four 2s ease-in-out infinite alternate;
           -ms-animation: four 2s ease-in-out infinite alternate;
           -o-animation: four 2s ease-in-out infinite alternate;
           animation: four 2s ease-in-out infinite alternate;
         }
+
+        /* Styles pour la cinquième section d'éclairage */
         #five {
           width: 60%;
-          /*animation*/
+          /* Animation */
           -webkit-animation: five 1s ease-in-out infinite alternate;
           -moz-animation: five 1s ease-in-out infinite alternate;
           -ms-animation: five 1s ease-in-out infinite alternate;
@@ -112,12 +133,13 @@ body {
   }
 }
 
-//ANIMATION SECTION 1
+/* Styles pour les animations */
+
+/* Animation pour la première section */
 @-webkit-keyframes one {
   from {
     -webkit-box-shadow: 0 0 250px 20px #473c78;
   }
-
   to {
     -webkit-box-shadow: 0 0 100px 15px #f72a3b;
   }
@@ -126,7 +148,6 @@ body {
   from {
     -moz-box-shadow: 0 0 250px 20px #473c78;
   }
-
   to {
     -moz-box-shadow: 0 0 100px 15px #f72a3b;
   }
@@ -135,28 +156,24 @@ body {
   from {
     -o-box-shadow: 0 0 250px 20px #473c78;
   }
-
   to {
     -o-box-shadow: 0 0 100px 15px #f72a3b;
   }
 }
-
 @keyframes one {
   from {
     box-shadow: 0 0 250px 20px #473c78;
   }
-
   to {
     box-shadow: 0 0 100px 15px #f72a3b;
   }
 }
 
-//ANIMATION SECTION 2
+/* Animation pour la deuxième section */
 @-webkit-keyframes two {
   from {
     -webkit-box-shadow: 0 0 250px 20px #18c499;
   }
-
   to {
     -webkit-box-shadow: 0 0 100px 15px #d8f05e;
   }
@@ -165,7 +182,6 @@ body {
   from {
     -moz-box-shadow: 0 0 250px 20px #18c499;
   }
-
   to {
     -moz-box-shadow: 0 0 100px 15px #d8f05e;
   }
@@ -174,28 +190,24 @@ body {
   from {
     -o-box-shadow: 0 0 250px 20px #18c499;
   }
-
   to {
     -o-box-shadow: 0 0 100px 15px #d8f05e;
   }
 }
-
 @keyframes two {
   from {
     box-shadow: 0 0 250px 20px #18c499;
   }
-
   to {
     box-shadow: 0 0 100px 15px #d8f05e;
   }
 }
 
-//ANIMATION SECTION 3
+/* Animation pour la troisième section */
 @-webkit-keyframes three {
   from {
     -webkit-box-shadow: 0 0 250px 20px #ffdd00;
   }
-
   to {
     -webkit-box-shadow: 0 0 100px 15px #3e33ff;
   }
@@ -204,7 +216,6 @@ body {
   from {
     -moz-box-shadow: 0 0 250px 20px #ffdd00;
   }
-
   to {
     -moz-box-shadow: 0 0 100px 15px #3e33ff;
   }
@@ -213,28 +224,24 @@ body {
   from {
     -o-box-shadow: 0 0 250px 20px #ffdd00;
   }
-
   to {
     -o-box-shadow: 0 0 100px 15px #3e33ff;
   }
 }
-
 @keyframes three {
   from {
     box-shadow: 0 0 250px 20px #ffdd00;
   }
-
   to {
     box-shadow: 0 0 100px 15px #3e33ff;
   }
 }
 
-//ANIMATION SECTION 4
+/* Animation pour la quatrième section */
 @-webkit-keyframes four {
   from {
     -webkit-box-shadow: 0 0 250px 20px #781848;
   }
-
   to {
     -webkit-box-shadow: 0 0 100px 15px #f2bbe9;
   }
@@ -243,7 +250,6 @@ body {
   from {
     -moz-box-shadow: 0 0 250px 20px #781848;
   }
-
   to {
     -moz-box-shadow: 0 0 100px 15px #f2bbe9;
   }
@@ -252,28 +258,24 @@ body {
   from {
     -o-box-shadow: 0 0 250px 20px #781848;
   }
-
   to {
     -o-box-shadow: 0 0 100px 15px #f2bbe9;
   }
 }
-
 @keyframes four {
   from {
     shadow: 0 0 250px 20px #781848;
   }
-
   to {
     shadow: 0 0 100px 15px #f2bbe9;
   }
 }
 
-//ANIMATION SECTION 5
+/* Animation pour la cinquième section */
 @-webkit-keyframes five {
   from {
     -webkit-box-shadow: 0 0 250px 20px #42f2a1;
   }
-
   to {
     -webkit-box-shadow: 0 0 100px 15px #f4f6ad;
   }
@@ -282,7 +284,6 @@ body {
   from {
     -moz-box-shadow: 0 0 250px 20px #42f2a1;
   }
-
   to {
     -moz-box-shadow: 0 0 100px 15px #f4f6ad;
   }
@@ -291,17 +292,14 @@ body {
   from {
     -o-box-shadow: 0 0 250px 20px #42f2a1;
   }
-
   to {
     -o-box-shadow: 0 0 100px 15px #f4f6ad;
   }
 }
-
 @keyframes five {
   from {
     box-shadow: 0 0 250px 20px #42f2a1;
   }
-
   to {
     box-shadow: 0 0 100px 15px #f4f6ad;
   }

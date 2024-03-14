@@ -7,6 +7,7 @@
   gap: 8rem;
   padding-top: 6rem;
 
+  /* Styles pour l'introduction des modèles */
   .intro__modeles {
     width: 60%;
     display: flex;
@@ -19,6 +20,7 @@
     }
   }
 
+  /* Styles pour la description des modèles */
   .description {
     background-color: rgba(0, 0, 0, 0.603);
     position: relative;
@@ -30,9 +32,12 @@
     display: flex;
     justify-content: flex-end;
 
+    /* Styles pour l'image 3D */
     .img__3d {
       width: 30%;
       position: relative;
+
+      /* Positionnement des modèles 3D */
       .modele__3d {
         width: 700px;
         height: auto;
@@ -41,10 +46,12 @@
         left: -12rem;
       }
 
+      /* Styles pour chaque modèle spécifique */
       #livre__potion {
         width: 600px;
         left: -7rem;
         top: -6rem;
+
         @media screen and (max-width: 1445px) {
           width: 500px;
           top: -2rem;
@@ -53,11 +60,13 @@
       }
     }
 
+    /* Styles pour les informations sur les modèles 3D */
     .info3D {
       width: 65%;
       margin: 2rem;
       text-align: right;
 
+      /* Styles pour le titre des objets 3D */
       .titre__objet__3d {
         font-family: "Eger", sans-serif;
         font-size: 5rem;
@@ -71,9 +80,13 @@
           flex-direction: row;
         }
       }
+
+      /* Styles pour les paragraphes d'informations */
       p {
         padding-left: 6rem;
       }
+
+      /* Styles pour les liens de téléchargement */
       a {
         i {
           font-size: 2rem;
@@ -90,6 +103,7 @@
     }
   }
 
+  /* Styles pour la section inversée */
   #inverse {
     border-bottom-right-radius: 11rem;
     border-top-right-radius: 11rem;
@@ -98,9 +112,12 @@
     display: flex;
     flex-direction: row-reverse;
 
+    /* Styles pour l'image 3D */
     .img__3d {
       width: 30%;
       position: relative;
+
+      /* Positionnement des modèles 3D */
       .modele__3d {
         width: 700px;
         position: absolute;
@@ -108,6 +125,7 @@
         left: -12rem;
       }
 
+      /* Styles pour chaque modèle spécifique */
       #chaudron {
         width: 1000px;
         top: -23rem;
@@ -125,17 +143,22 @@
       }
     }
 
+    /* Styles pour les informations sur les modèles 3D */
     .info3D {
       text-align: left;
 
+      /* Styles pour le titre des objets 3D */
       .titre__objet__3d {
         flex-direction: row;
       }
 
+      /* Styles pour les paragraphes d'informations */
       p {
         padding-left: 0;
         padding-right: 6rem;
       }
+
+      /* Styles pour les liens de téléchargement */
       .telechargement {
         left: 3rem;
       }
@@ -143,6 +166,7 @@
   }
 }
 
+/* Styles pour les écrans de petite taille */
 @media screen and (max-width: 700px) {
   body {
     #modeles {
@@ -216,6 +240,7 @@
   }
 }
 
+/* Styles pour les écrans de taille moyenne */
 @media screen and (max-width: 1000px) {
   #modeles {
     .description {

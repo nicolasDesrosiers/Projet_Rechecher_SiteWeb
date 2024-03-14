@@ -1,3 +1,8 @@
+@charset "UTF-8";
+/* Styles généraux pour le body */
+body {
+  /* Styles pour la section #blender */
+}
 body #blender {
   display: flex;
   flex-direction: column;
@@ -5,6 +10,10 @@ body #blender {
   align-items: center;
   padding-top: 6rem;
   background-image: url("../medias/Background.png");
+  /* Styles pour les éléments .titre dans #blender */
+  /* Styles pour l'introduction dans #blender */
+  /* Styles pour les technologies dans #blender */
+  /* Styles pour le rendu final */
 }
 body #blender .titre {
   width: 60%;
@@ -21,11 +30,14 @@ body #blender .technologies {
   background-color: rgba(0, 0, 0, 0.6117647059);
   padding: 3rem;
   border-radius: 2rem;
+  /* Styles pour les outils dans les technologies */
 }
 body #blender .technologies .outil div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* Styles pour les modales */
+  /* Styles pour les images GIF des outils */
 }
 body #blender .technologies .outil div p {
   width: 80%;
@@ -36,7 +48,7 @@ body #blender .technologies .outil div p {
   }
 }
 body #blender .technologies .outil div .modal {
-  display: none;
+  display: none; /* Cachée par défaut */
   position: fixed;
   z-index: 1000;
   left: 0;
@@ -98,6 +110,8 @@ body #blender .rendu {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  /* Styles pour le titre du rendu final */
+  /* Styles pour le wrapper du rendu final */
 }
 body #blender .rendu #rendu__final {
   font-size: 7rem;
@@ -184,57 +198,14 @@ body #blender .rendu .wrapper .scrolling {
   pointer-events: none;
   opacity: 1;
 }
+
+/* Media queries pour les tailles d'écran */
 @media screen and (max-width: 1200px) {
-  body #blender .titre {
-    width: 80%;
-  }
-  body #blender .intro__blender {
-    width: 80%;
-  }
-  body #blender .technologies {
-    flex-direction: column;
-  }
-  body #blender .technologies .outil {
-    text-align: left;
-  }
-  body #blender .technologies .outil div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-  }
-  body #blender .technologies .outil div p {
-    width: 80%;
-  }
+  /* Styles pour #blender à une largeur d'écran maximale de 1200px */
 }
 @media screen and (max-width: 750px) {
-  body #blender .titre {
-    width: 80%;
-  }
-  body #blender .intro__blender {
-    width: 80%;
-  }
-  body #blender .technologies {
-    flex-direction: column;
-  }
-  body #blender .technologies .outil {
-    text-align: center;
-  }
-  body #blender .technologies .outil div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-  }
-  body #blender .technologies .outil div p {
-    width: 100%;
-  }
-  body #blender .rendu .wrapper {
-    width: 500px;
-    height: 370px;
-  }
+  /* Styles pour #blender à une largeur d'écran maximale de 750px */
 }
-
 #modeles {
   background-image: url("../medias/Background.png");
   display: flex;
@@ -243,6 +214,9 @@ body #blender .rendu .wrapper .scrolling {
   align-items: center;
   gap: 8rem;
   padding-top: 6rem;
+  /* Styles pour l'introduction des modèles */
+  /* Styles pour la description des modèles */
+  /* Styles pour la section inversée */
 }
 #modeles .intro__modeles {
   width: 60%;
@@ -266,10 +240,14 @@ body #blender .rendu .wrapper .scrolling {
   border-top-left-radius: 11rem;
   display: flex;
   justify-content: flex-end;
+  /* Styles pour l'image 3D */
+  /* Styles pour les informations sur les modèles 3D */
 }
 #modeles .description .img__3d {
   width: 30%;
   position: relative;
+  /* Positionnement des modèles 3D */
+  /* Styles pour chaque modèle spécifique */
 }
 #modeles .description .img__3d .modele__3d {
   width: 700px;
@@ -294,6 +272,9 @@ body #blender .rendu .wrapper .scrolling {
   width: 65%;
   margin: 2rem;
   text-align: right;
+  /* Styles pour le titre des objets 3D */
+  /* Styles pour les paragraphes d'informations */
+  /* Styles pour les liens de téléchargement */
 }
 #modeles .description .info3D .titre__objet__3d {
   font-family: "Eger", sans-serif;
@@ -329,10 +310,14 @@ body #blender .rendu .wrapper .scrolling {
   border-top-left-radius: 2rem;
   display: flex;
   flex-direction: row-reverse;
+  /* Styles pour l'image 3D */
+  /* Styles pour les informations sur les modèles 3D */
 }
 #modeles #inverse .img__3d {
   width: 30%;
   position: relative;
+  /* Positionnement des modèles 3D */
+  /* Styles pour chaque modèle spécifique */
 }
 #modeles #inverse .img__3d .modele__3d {
   width: 700px;
@@ -357,6 +342,9 @@ body #blender .rendu .wrapper .scrolling {
 }
 #modeles #inverse .info3D {
   text-align: left;
+  /* Styles pour le titre des objets 3D */
+  /* Styles pour les paragraphes d'informations */
+  /* Styles pour les liens de téléchargement */
 }
 #modeles #inverse .info3D .titre__objet__3d {
   flex-direction: row;
@@ -369,6 +357,7 @@ body #blender .rendu .wrapper .scrolling {
   left: 3rem;
 }
 
+/* Styles pour les écrans de petite taille */
 @media screen and (max-width: 700px) {
   body #modeles .description {
     width: 24rem;
@@ -428,6 +417,7 @@ body #blender .rendu .wrapper .scrolling {
     padding-right: 0;
   }
 }
+/* Styles pour les écrans de taille moyenne */
 @media screen and (max-width: 1000px) {
   #modeles .description {
     width: 35rem;
@@ -638,10 +628,6 @@ body header nav ul {
 body header nav ul li {
   list-style: none;
   width: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
 }
 body header nav ul li:hover i {
   transform: translateX(-4.5rem);
@@ -824,10 +810,16 @@ body header .synopsis p {
     text-shadow: 0 0 10px #fff, 0 0 40px #54218f, 0 0 40px #12b7dd, 0 0 70px #248ea6, 0 0 80px #265e6a, 0 0 100px #2d4d54, 0 0 150px #2f3638;
   }
 }
+/* Styles généraux pour le body */
+body {
+  /* Styles pour le footer */
+}
 body footer {
   background-image: url("../medias/Background.png");
   height: 20rem;
   position: relative;
+  /* Styles pour les informations du footer */
+  /* Styles pour l'enveloppe des animations */
 }
 body footer .info__footer {
   position: absolute;
@@ -837,6 +829,8 @@ body footer .info__footer {
   align-items: end;
   width: 90%;
   height: 80%;
+  /* Styles pour le titre dans le footer */
+  /* Styles pour les icônes de réseaux sociaux dans le footer */
 }
 body footer .info__footer h2 {
   font-family: "Lato", sans-serif;
@@ -853,6 +847,7 @@ body footer .info__footer .sociaux {
   bottom: 0;
   left: 2rem;
   height: 30%;
+  /* Styles pour les liens des icônes */
 }
 body footer .info__footer .sociaux a {
   opacity: 0.5;
@@ -870,14 +865,21 @@ body footer #wrap {
   position: relative;
   margin: 0 auto 0 auto;
   overflow: hidden;
+  /* Styles pour les éclairages dans l'enveloppe */
 }
 body footer #wrap #lightings {
   bottom: -60px;
   position: absolute;
   width: 100%;
+  /* Styles pour les différentes sections des éclairages */
+  /* Styles pour la première section d'éclairage */
+  /* Styles pour la deuxième section d'éclairage */
+  /* Styles pour la troisième section d'éclairage */
+  /* Styles pour la quatrième section d'éclairage */
+  /* Styles pour la cinquième section d'éclairage */
 }
 body footer #wrap #lightings section {
-  /*border-radius*/
+  /* Bordure arrondie */
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -887,7 +889,7 @@ body footer #wrap #lightings section {
   margin: auto;
 }
 body footer #wrap #lightings #one {
-  /*animation*/
+  /* Animation */
   -webkit-animation: one 5s ease-in-out infinite alternate;
   -moz-animation: one 5s ease-in-out infinite alternate;
   -ms-animation: one 5s ease-in-out infinite alternate;
@@ -896,7 +898,7 @@ body footer #wrap #lightings #one {
 }
 body footer #wrap #lightings #two {
   width: 90%;
-  /*animation*/
+  /* Animation */
   -webkit-animation: two 4s ease-in-out infinite alternate;
   -moz-animation: two 4s ease-in-out infinite alternate;
   -ms-animation: two 4s ease-in-out infinite alternate;
@@ -905,7 +907,7 @@ body footer #wrap #lightings #two {
 }
 body footer #wrap #lightings #three {
   width: 80%;
-  /*animation*/
+  /* Animation */
   -webkit-animation: three 3s ease-in-out infinite alternate;
   -moz-animation: three 3s ease-in-out infinite alternate;
   -ms-animation: three 3s ease-in-out infinite alternate;
@@ -914,7 +916,7 @@ body footer #wrap #lightings #three {
 }
 body footer #wrap #lightings #four {
   width: 70%;
-  /*animation*/
+  /* Animation */
   -webkit-animation: four 2s ease-in-out infinite alternate;
   -moz-animation: four 2s ease-in-out infinite alternate;
   -ms-animation: four 2s ease-in-out infinite alternate;
@@ -923,7 +925,7 @@ body footer #wrap #lightings #four {
 }
 body footer #wrap #lightings #five {
   width: 60%;
-  /*animation*/
+  /* Animation */
   -webkit-animation: five 1s ease-in-out infinite alternate;
   -moz-animation: five 1s ease-in-out infinite alternate;
   -ms-animation: five 1s ease-in-out infinite alternate;
@@ -931,6 +933,8 @@ body footer #wrap #lightings #five {
   animation: five 1s ease-in-out infinite alternate;
 }
 
+/* Styles pour les animations */
+/* Animation pour la première section */
 @-webkit-keyframes one {
   from {
     -webkit-box-shadow: 0 0 250px 20px #473c78;
@@ -963,6 +967,7 @@ body footer #wrap #lightings #five {
     box-shadow: 0 0 100px 15px #f72a3b;
   }
 }
+/* Animation pour la deuxième section */
 @-webkit-keyframes two {
   from {
     -webkit-box-shadow: 0 0 250px 20px #18c499;
@@ -995,6 +1000,7 @@ body footer #wrap #lightings #five {
     box-shadow: 0 0 100px 15px #d8f05e;
   }
 }
+/* Animation pour la troisième section */
 @-webkit-keyframes three {
   from {
     -webkit-box-shadow: 0 0 250px 20px #ffdd00;
@@ -1027,6 +1033,7 @@ body footer #wrap #lightings #five {
     box-shadow: 0 0 100px 15px #3e33ff;
   }
 }
+/* Animation pour la quatrième section */
 @-webkit-keyframes four {
   from {
     -webkit-box-shadow: 0 0 250px 20px #781848;
@@ -1059,6 +1066,7 @@ body footer #wrap #lightings #five {
     shadow: 0 0 100px 15px #f2bbe9;
   }
 }
+/* Animation pour la cinquième section */
 @-webkit-keyframes five {
   from {
     -webkit-box-shadow: 0 0 250px 20px #42f2a1;

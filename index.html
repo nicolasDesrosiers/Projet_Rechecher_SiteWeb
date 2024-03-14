@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Déclaration du type de document et de la langue -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Liens vers les feuilles de style CSS -->
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <!-- Titre de la page -->
     <title>MOON</title>
+    <!-- Liens vers les polices de caractères externes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- Lien vers la bibliothèque d'icônes Font Awesome -->
     <script
       src="https://kit.fontawesome.com/377cab68ef.js"
       crossorigin="anonymous"
@@ -20,14 +25,17 @@
 
   <body>
     <header id="header">
+      <!-- Barre de navigation avec icône de menu -->
       <input type="checkbox" id="menu__toggle" />
       <label for="menu__toggle" class="menu__icon"
         ><i class="fa-solid fa-bars"></i
       ></label>
       <nav class="menu">
+        <!-- Logo -->
         <div class="logo">
           <a href="#header"><img src="medias/Logo.png" alt="LogoSite" /></a>
         </div>
+        <!-- Liens de navigation -->
         <ul>
           <li>
             <i class="fa-solid fa-moon"></i><a href="#creation">CRÉATION</a>
@@ -41,16 +49,18 @@
         </ul>
       </nav>
 
+      <!-- Conteneur du titre -->
       <div class="conteneur__titre">
         <div>THE LIGHT OF</div>
         <div class="moon">MOON</div>
+        <!-- Image représentant Moon -->
         <img
           id="MoonVisage"
           src="medias/Render_Projet_Final/Personnage_visage.png"
           alt=""
         />
       </div>
-
+      <!-- Synopsis du projet -->
       <div class="synopsis">
         <p>
           <i class="fa-solid fa-quote-left"></i>
@@ -89,7 +99,7 @@
         </p>
       </div>
     </header>
-
+    <!-- Section de présentation du processus de création -->
     <section id="creation">
       <div class="conteneur__principal__creation">
         <div>
@@ -115,18 +125,22 @@
             magie, complète avec un chaudron et des livres, comme si le
             personnage était en train de rechercher ou de concocter un sort.
           </p>
+          <!-- Images principal de création -->
           <div class="img__creation principal">
+            <!-- Icône de flèche pour déplacer les images vers la droite -->
             <i
               class="fa-solid fa-circle-play fleche__droite"
               onclick="deplacer('gauche')"
             ></i>
-
+            <!-- Icône de flèche pour déplacer les images vers la gauche -->
             <i
               class="fa-solid fa-circle-play fleche__gauche"
               onclick="deplacer('droite')"
             ></i>
           </div>
+          <!-- Conteneur des images de création -->
           <div id="banque__photos">
+            <!-- Images de création -->
             <div class="img__creation gauche"></div>
             <div class="img__creation millieu"></div>
             <div class="img__creation droite"></div>
@@ -134,7 +148,7 @@
         </div>
       </div>
     </section>
-
+    <!-- Section dédiée aux modèles 3D -->
     <section id="modeles">
       <div class="intro__modeles">
         <div class="titre">MODÈLES 3D</div>
@@ -150,8 +164,9 @@
           motifs et des reliefs.
         </p>
       </div>
-
+      <!-- Conteneur principal modèles 3D -->
       <div class="description">
+        <!-- Image du modèle 3D -->
         <div class="img__3d">
           <img
             src="./medias/Render_Projet_Final/Personnage.png"
@@ -160,15 +175,18 @@
             id="personnageMoon"
           />
         </div>
+        <!-- Informations sur le modèle 3D -->
         <div class="info3D">
           <div class="titre__objet__3d">
             Moon
+            <!-- Icône de téléchargement -->
             <a
               href="medias/Render_Projet_Final/Personnage.png"
               download="Personnage.png"
               ><i class="fa-solid fa-download"></i
             ></a>
           </div>
+          <!-- Description des modèles 3D -->
           <p>
             Moon est un jeune mage noir au style rebelle et déterminé. Avec ses
             cheveux mauve pâle en bataille, un t-shirt crop top "Bad Witch", un
@@ -181,9 +199,10 @@
           </p>
         </div>
       </div>
-
+      <!-- Conteneur principal modèles 3D -->
       <div class="description" id="inverse">
         <div class="img__3d">
+          <!-- Image du modèle 3D -->
           <img
             src="./medias/Render_Projet_Final/chaudron.png"
             alt="modele 3d chaudron"
@@ -191,15 +210,18 @@
             id="chaudron"
           />
         </div>
+        <!-- Informations sur le modèle 3D -->
         <div class="info3D">
           <div class="titre__objet__3d">
             Chaudron Magique
+            <!-- Icône de téléchargement -->
             <a
               href="medias/Render_Projet_Final/chaudron.png"
               download="chaudron.png"
               ><i class="fa-solid fa-download"></i
             ></a>
           </div>
+          <!-- Description des modèles 3D -->
           <p>
             Le chaudron de Moon est façonnée en fonte noire. À l'intérieur, un
             liquide lumineux mauve émet une lueur douce et envoûtante, évoquant
@@ -212,9 +234,10 @@
           </p>
         </div>
       </div>
-
+      <!-- Conteneur principal modèles 3D -->
       <div class="description">
         <div class="img__3d">
+          <!-- Image du modèle 3D -->
           <img
             src="./medias/Render_Projet_Final/Livre_potion.png"
             alt="Pile livre et potion"
@@ -222,15 +245,18 @@
             id="livre__potion"
           />
         </div>
+        <!-- Informations sur le modèle 3D -->
         <div class="info3D">
           <div class="titre__objet__3d">
             Sortilèges
+            <!-- Icône de téléchargement -->
             <a
               href="medias/Render_Projet_Final/Livre_potion.png"
               download="Livre_potion.png"
               ><i class="fa-solid fa-download"></i
             ></a>
           </div>
+          <!-- Description des modèles 3D -->
           <p>
             La pile de livres de Moon offre une vision mystique et intrigante.
             Les livres, de teinte froide, s'entassent avec une aura de
@@ -242,9 +268,10 @@
           </p>
         </div>
       </div>
-
+      <!-- Conteneur principal modèles 3D -->
       <div class="description" id="inverse">
         <div class="img__3d">
+          <!-- Image du modèle 3D -->
           <img
             src="./medias/Render_Projet_Final/Stand_livrepng.png"
             alt="stand et livre"
@@ -252,15 +279,18 @@
             id="stand__livre"
           />
         </div>
+        <!-- Informations sur le modèle 3D -->
         <div class="info3D">
           <div class="titre__objet__3d">
             Piédestal
+            <!-- Icône de téléchargement -->
             <a
               href="medias/Render_Projet_Final/Stand_livrepng.png"
               download="Stand_livrepng.png"
               ><i class="fa-solid fa-download"></i
             ></a>
           </div>
+          <!-- Description des modèles 3D -->
           <p>
             Le piédestal est fait de bois, de fer et de roche. Il soutient le
             livre de sort pour changer la lune en soleil. Le livre ouvert sur le
@@ -275,9 +305,13 @@
       </div>
     </section>
 
+    <!-- Section dédiée à Blender -->
     <section id="blender">
+      <!-- Titre de la section Blender -->
       <div class="titre">BLENDER</div>
+      <!-- Introduction à l'utilisation de Blender -->
       <div class="intro__blender">
+        <!-- Paragraphe décrivant les raisons du choix de Blender -->
         <p>
           J'ai choisi d'utiliser Blender pour mon projet car c'est un logiciel
           polyvalent et puissant qui offre une gamme complète d'outils pour la
@@ -292,10 +326,14 @@
         </p>
       </div>
 
+      <!-- Technologies et outils utilisés avec Blender -->
       <div class="technologies">
+        <!-- Outil : Mode Sculpt - Draw -->
         <div class="outil">
+          <!-- Titre de l'outil -->
           <h3>Mode Sculpt - Draw</h3>
           <div>
+            <!-- Description de l'outil -->
             <p>
               L'outil Draw dans le mode Sculpt est un outil essentiel qui permet
               de sculpter des formes en utilisant des mouvements similaires à
@@ -303,18 +341,26 @@
               Draw, vous pouvez créer des déformations en ajoutant ou en
               retirant de la matière de votre modèle 3D de manière intuitive.
             </p>
+            <!-- Gif illustrant l'utilisation de l'outil -->
             <div class="gif__outil" data-modal="modal1" id="gif__sculpt"></div>
+            <!-- Modal pour afficher le gif en grand -->
             <div class="modal" id="modal1">
               <div class="modal-content">
                 <span class="close">&times;</span>
-                <img src="medias/Gif_medias/Outil_Sculpt.gif" alt="" />
+                <img
+                  src="medias/Gif_medias/Outil_Sculpt.gif"
+                  alt="Utilisation de l'outil Sculpt - Draw"
+                />
               </div>
             </div>
           </div>
         </div>
+        <!-- Outil : Curve & Path -->
         <div class="outil">
+          <!-- Titre de l'outil -->
           <h3>Curve & Path</h3>
           <div>
+            <!-- Description de l'outil -->
             <p>
               Avec les courbes, vous pouvez créer une grande variété de formes
               en utilisant des méthodes de modélisation non destructives. Vous
@@ -324,57 +370,79 @@
               l'épaisseur à la courbe et la convertir en une surface ou un objet
               solide.
             </p>
+            <!-- Gif illustrant l'utilisation de l'outil -->
             <div class="gif__outil" data-modal="modal2" id="gif__curve"></div>
+            <!-- Modal pour afficher le gif en grand -->
             <div class="modal" id="modal2">
               <div class="modal-content">
                 <span class="close">&times;</span>
-                <img src="medias/Gif_medias/Outil_Curve.gif" alt="" />
+                <img
+                  src="medias/Gif_medias/Outil_Curve.gif"
+                  alt="Utilisation de l'outil Curve & Path"
+                />
               </div>
             </div>
           </div>
         </div>
+        <!-- Outil : Modificateur - Shrinkwrap -->
         <div class="outil">
+          <!-- Titre de l'outil -->
           <h3>Modificateur - Shrinkwrap</h3>
           <div>
+            <!-- Description de l'outil -->
             <p>
               Le modificateur Shrinkwrap est un outil utilisé pour déformer un
               objet en le faisant épouser la surface d'un autre objet, appelé
               "cible". Cela signifie que l'objet avec le Shrinkwrap appliqué
               sera contraint à suivre la surface de la cible aussi étroitement
               que possible, tout en conservant sa propre forme autant que
-              possible
+              possible.
             </p>
+            <!-- Gif illustrant l'utilisation de l'outil -->
             <div
               class="gif__outil"
               data-modal="modal3"
               id="gif__shrinkwrap"
             ></div>
+            <!-- Modal pour afficher le gif en grand -->
             <div class="modal" id="modal3">
               <div class="modal-content">
                 <span class="close">&times;</span>
-                <img src="medias/Gif_medias/Outil_Shrinkwrap.gif" alt="" />
+                <img
+                  src="medias/Gif_medias/Outil_Shrinkwrap.gif"
+                  alt="Utilisation de l'outil Modificateur - Shrinkwrap"
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Rendu final -->
       <div class="rendu">
+        <!-- Titre du rendu final -->
         <div id="rendu__final" class="titre">RENDU FINAL</div>
+        <!-- Wrapper pour l'affichage du rendu avant/après -->
         <div class="wrapper">
+          <!-- Rendu avant -->
           <div class="before">
             <img
               class="content-image"
               src="medias/RenduApres.png"
+              alt="Rendu final après traitement"
               draggable="false"
             />
           </div>
+          <!-- Rendu après -->
           <div class="after">
             <img
               class="content-image"
               src="medias/RenduAvant.png"
+              alt="Rendu final avant traitement"
               draggable="false"
             />
           </div>
+          <!-- Scroller pour comparer le rendu avant/après -->
           <div class="scroller">
             <svg
               class="scroller__thumb"
@@ -390,22 +458,32 @@
         </div>
       </div>
     </section>
+
+    <!-- Début du pied de page -->
     <footer>
+      <!-- Contenu informatif du pied de page -->
       <div class="info__footer">
+        <!-- Liens vers les réseaux sociaux -->
         <div class="sociaux">
-          <a href="https://www.behance.net/nicolascarrire"
-            ><i class="fa-brands fa-square-behance"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/nicolas-carri%C3%A8re-90a575290/"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
-          <a href="mailto:nicolascarriere15@gmail.com"
-            ><i class="fa-solid fa-envelope"></i
-          ></a>
+          <!-- Lien vers Behance -->
+          <a href="https://www.behance.net/nicolascarrire">
+            <i class="fa-brands fa-square-behance"></i>
+          </a>
+          <!-- Lien vers LinkedIn -->
+          <a
+            href="https://www.linkedin.com/in/nicolas-carri%C3%A8re-90a575290/"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <!-- Lien vers l'e-mail -->
+          <a href="mailto:nicolascarriere15@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
         </div>
         <h2>Par Nicolas Carrière</h2>
       </div>
 
+      <!-- Structure pour les effets de glow -->
       <article id="wrap">
         <article id="lightings">
           <section id="one">
@@ -420,6 +498,7 @@
         </article>
       </article>
     </footer>
+    <!-- Inclusion du fichier JavaScript pour les interactions -->
     <script src="./js/interaction.js"></script>
   </body>
 </html>

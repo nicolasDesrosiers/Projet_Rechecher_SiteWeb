@@ -1,6 +1,7 @@
 html {
   body {
     #creation {
+      // Conteneur principal de la section de création
       background-image: url("../medias/Background.png");
       display: flex;
       flex-direction: column;
@@ -8,6 +9,7 @@ html {
       padding-top: 6rem;
 
       .conteneur__principal__creation {
+        // Conteneur principal de la création
         margin: 1rem;
         display: flex;
         flex-direction: column;
@@ -15,6 +17,7 @@ html {
         align-items: center;
 
         div {
+          // Conteneur des éléments de la création
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -22,6 +25,7 @@ html {
           width: 60%;
 
           .titre {
+            // Titre de la section de création
             width: 100%;
             display: block;
             text-shadow: 0 0 12px #b316d6, 0 0 18px #927419, 0 0 24px #563e1a,
@@ -29,6 +33,7 @@ html {
           }
 
           #banque__photos {
+            // Conteneur des images de la banque de photos
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
@@ -40,6 +45,7 @@ html {
               width: 400px;
             }
             .img__creation {
+              // Style des images de création
               width: 250px;
               height: 250px;
               background-size: contain;
@@ -48,18 +54,22 @@ html {
               background-color: white;
             }
             .gauche {
+              // Image de croquis de personnage
               background-image: url("../medias/CroquisPersonnage.png");
             }
             .millieu {
+              // Image de croquis de pièce
               background-image: url("../medias/CroquisPiece.png");
             }
             .droite {
+              // Image de croquis d'objets
               background-image: url("../medias/CroquisItems.png");
             }
           }
         }
 
         .principal {
+          // Conteneur principal de la création principale
           width: 810px;
           height: 420px;
           background-image: url("../medias/MoodBoard.png");
@@ -71,6 +81,7 @@ html {
           position: relative;
 
           i {
+            // Flèches de navigation
             font-size: 2.3rem;
             position: absolute;
             top: 50%;
@@ -80,9 +91,11 @@ html {
             }
           }
           .fleche__droite {
+            // Flèche de navigation vers la droite
             right: -2.5rem;
           }
           .fleche__gauche {
+            // Flèche de navigation vers la gauche
             left: -2.5rem;
             transform: rotate(180deg);
           }
@@ -93,6 +106,7 @@ html {
             width: 80%;
 
             .img__creation {
+              // Style des images de création pour les écrans de petite taille
               width: 300px;
               height: 260px;
               padding-top: 0;
@@ -104,6 +118,7 @@ html {
           div {
             #banque__photos {
               .img__creation {
+                // Style des images de création pour les écrans moyens
                 width: 150px;
                 height: 150px;
               }
@@ -111,6 +126,7 @@ html {
           }
 
           .principal {
+            // Taille de la création principale pour les écrans moyens
             width: 580px;
             height: 260px;
           }

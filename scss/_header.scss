@@ -1,23 +1,28 @@
 body {
   header {
+    // Arrière-plan du header avec une image centrée et redimensionnée pour couvrir
     background-image: url("../medias/Background.png");
     background-position: center;
     background-size: cover;
 
     .menu__open {
+      // Masquer le débordement pour le menu ouvert
       overflow: hidden;
     }
 
     #menu__toggle {
+      // Masquer l'interrupteur de menu
       display: none;
     }
 
     #menu__toggle:checked ~ .menu {
+      // Animation pour afficher le menu lorsqu'il est ouvert
       transform: translateX(0rem);
       transition: all 0.5s ease-in-out;
     }
 
     .fa-bars {
+      // Icône de menu hamburger pour les appareils mobiles
       font-size: 2.5rem;
       position: fixed;
       right: 1rem;
@@ -29,8 +34,8 @@ body {
       }
     }
 
-    //_____MENU POUR LA NAVIGATION
     nav {
+      // Conteneur pour la navigation
       width: 100vw;
       height: 5rem;
       display: flex;
@@ -42,21 +47,17 @@ body {
       z-index: 100;
 
       ul {
+        // Liste des éléments de navigation
         display: flex;
         justify-content: space-around;
         width: 50vw;
 
         li {
+          // Éléments de la liste de navigation
           list-style: none;
           width: 5rem;
 
-          display: flex;
-          justify-content: center;
-          align-items: center;
-
-          position: relative;
-
-          //_____ HOVER LORSQU'ON SURVOL UN LI
+          // Animation lors du survol d'un élément de navigation
           &:hover i {
             transform: translateX(-4.5rem);
             opacity: 1;
@@ -64,14 +65,15 @@ body {
             font-size: 1.5rem;
           }
 
-          //_____ ICONE DE LA LUNE EN HOVER
           i {
+            // Icône de la lune
             position: absolute;
             opacity: 0;
             transition: all 0.1s ease;
           }
 
           a {
+            // Style des liens de navigation
             font-family: "Lato", sans-serif;
             font-weight: 300;
             font-size: 0.9rem;
@@ -84,8 +86,8 @@ body {
         }
       }
 
-      //_____ LOGO DU SITE WEB
       .logo {
+        // Logo du site web
         height: 7rem;
         img {
           width: 12rem;
@@ -94,6 +96,7 @@ body {
       }
 
       @media screen and (max-width: 750px) {
+        // Styles pour les appareils mobiles
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.8);
@@ -112,7 +115,7 @@ body {
           li {
             width: 18rem;
 
-            //_____ HOVER LORSQU'ON SURVOL UN LI
+            // Animation lors du survol d'un élément de navigation
             &:hover i {
               transform: translateX(-4.5rem);
               opacity: 1;
@@ -120,7 +123,6 @@ body {
               font-size: 1.5rem;
             }
 
-            //_____ ICONE DE LA LUNE EN HOVER
             i {
               position: absolute;
               opacity: 0;
@@ -140,8 +142,8 @@ body {
           }
         }
 
-        //_____ LOGO DU SITE WEB
         .logo {
+          // Style du logo pour les appareils mobiles
           text-align: center;
 
           img {
@@ -152,14 +154,15 @@ body {
       }
     }
 
-    //_____ TITRE GÉNÉRAL DANS L'ACCEUIL
     .conteneur__titre {
+      // Conteneur pour le titre principal
       display: flex;
       flex-direction: column;
       align-items: center;
       padding-top: 7rem;
       position: relative;
       div {
+        // Style du titre principal
         -webkit-text-stroke: 1px;
         -webkit-text-stroke-color: rgba(245, 245, 245, 0.2);
         color: $GrisFoncer;
@@ -170,6 +173,7 @@ body {
         font-family: "Eger", sans-serif;
       }
       .moon {
+        // Style de la lune
         font-family: "Eger", sans-serif;
         font-size: 30rem;
         text-align: center;
@@ -181,6 +185,7 @@ body {
       }
 
       #MoonVisage {
+        // Style de l'image de la lune
         width: 650px;
         position: absolute;
         bottom: 0;
@@ -195,6 +200,7 @@ body {
       }
 
       @media screen and (max-width: 750px) {
+        // Styles pour les appareils mobiles
         padding-top: 8rem;
         div {
           font-size: 3rem;
@@ -206,6 +212,7 @@ body {
     }
 
     .synopsis {
+      // Conteneur pour le synopsis
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -214,6 +221,7 @@ body {
       padding: 1rem;
 
       i {
+        // Icônes de guillemets pour le synopsis
         position: absolute;
         font-size: 5rem;
         opacity: 0.1;
@@ -228,12 +236,14 @@ body {
       }
 
       p {
+        // Style du texte du synopsis
         width: 60%;
         position: relative;
         font-weight: 500;
       }
 
       @media screen and (max-width: 750px) {
+        // Styles pour les appareils mobiles
         .fa-quote-left {
           left: -1rem;
         }
@@ -251,8 +261,7 @@ body {
   }
 }
 
-//_____ANIMATION DU GLOW POUR LE TIRE DE L'ACCEUIL
-
+// Animation du glow pour le titre de l'accueil
 @keyframes glow {
   0% {
     text-shadow: 0 0 10px #fff, 0 0 40px #54218f, 0 0 40px #12b7dd,

@@ -1,5 +1,4 @@
-//____IMPORTATION DES FICHIERS SASS____//
-
+// Importation des fichiers SASS
 @import "./blender";
 @import "./modeles";
 @import "./creation";
@@ -7,46 +6,54 @@
 @import "./header";
 @import "./footer";
 
-//____SASS DE BASE____//
-
+// Styles de base pour HTML et body
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 
+  // Styles pour les liens
   a {
     text-decoration: none;
     color: whitesmoke;
   }
 
+  // Styles pour le body
   body {
     background-color: $GrisFoncer;
     color: whitesmoke;
 
+    // Styles pour les paragraphes
     p {
       font-family: "Lato", sans-serif;
       font-weight: 300;
-      line-height: 1.5;
-
+      line-height: 1.5; // Hauteur de ligne
       br {
-        padding: 1rem;
+        padding: 1rem; // Rembourrage pour les sauts de ligne
       }
     }
+
+    // Styles pour les titres de niveau 3
     h3 {
       font-family: "Lato", sans-serif;
       font-weight: 700;
       text-align: center;
     }
+
+    // Styles pour les sections
     section {
+      // Styles pour les titres dans les sections
       .titre {
         font-family: "Eger", sans-serif;
         font-size: 5rem;
         color: rgb(255, 255, 255);
-        letter-spacing: 5px;
+        letter-spacing: 5px; // Espacement entre les lettres
+        // Effet de texte en ombre
         text-shadow: 0 0 12px #16d6d0, 0 0 18px #198092, 0 0 24px #1a3856,
           0 0 30px #1d5b5c, 0 0 40px #09d5e8;
       }
     }
 
+    // Styles spécifiques pour l'élément avec l'ID "modeles"
     #modeles {
       background-color: white;
     }

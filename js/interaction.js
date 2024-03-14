@@ -1,8 +1,17 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//_____________________________________FONCTION POUR LE MENU BURGER EN TELEPHONE ________________________________________//
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Attend que le DOM soit entièrement chargé avant d'exécuter le code
 document.addEventListener("DOMContentLoaded", function () {
+  // Sélectionne tous les liens dans le menu
   var links = document.querySelectorAll(".menu a");
 
+  // Pour chaque lien dans le menu
   links.forEach(function (link) {
+    // Ajoute un écouteur d'événements pour le clic
     link.addEventListener("click", function () {
+      // Désactive la case à cocher du menu burger après un clic sur un lien
       document.getElementById("menu__toggle").checked = false;
     });
   });
@@ -12,9 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
 //_____________________________________FONCTION POUR LE CAROUSSEL IMAGE CREATION ________________________________________//
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// Définit une fonction deplacer qui prend la direction (gauche ou droite) comme paramètre
+// Définit une fonction pour déplacer les images dans le carrousel
 function deplacer(direction) {
-  // Sélectionne tous les éléments de classe "img__creation" dans le document
+  // Sélectionne tous les éléments avec la classe "img__creation"
   let elements = document.querySelectorAll(".img__creation");
   // Stocke la première image dans firstImg
   let firstImg = elements[0];
@@ -63,13 +72,13 @@ function deplacer(direction) {
 //_________________________________________ FONCTION POUR LE RENDU AVANT/APRES __________________________________________//
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// Variable 'active' pour savoir quand nous l'utilisons
+// Variable pour indiquer si la souris est activée
 let active = false;
 
-// Surveiller les clics sur notre barre de défilement
+// Écouteur d'événement pour le clic de la souris sur la barre de défilement
 document.querySelector(".scroller").addEventListener("mousedown", function () {
   active = true;
-  // Classe de défilement pour que la barre de défilement ait une opacité maximale lorsqu'elle est active
+  // Ajoute une classe pour indiquer que la barre de défilement est activée
   document.querySelector(".scroller").classList.add("scrolling");
 });
 
@@ -83,17 +92,15 @@ document.body.addEventListener("mouseleave", function () {
   document.querySelector(".scroller").classList.remove("scrolling");
 });
 
-// Déterminer où se trouve la souris
+// Déterminer la position de la souris
 document.body.addEventListener("mousemove", function (e) {
   if (!active) return;
-  // La souris est ici
   let x = e.pageX;
-  // mais elle est relative au conteneur
   x -= document.querySelector(".wrapper").getBoundingClientRect().left;
   scrollIt(x);
 });
 
-// Fonction pour le scroll
+// Fonction pour faire défiler
 function scrollIt(x) {
   let transform = Math.max(
     0,
@@ -104,7 +111,7 @@ function scrollIt(x) {
 }
 
 // État initial en fonction de la largeur,
-// Montrer un peu des deux images pour que l'utilisateur puisse voir ce qui se passe
+// Affiche un peu des deux images pour que l'utilisateur puisse voir ce qui se passe
 scrollIt(350);
 
 // Répétitions du processus pour les événements tactiles
