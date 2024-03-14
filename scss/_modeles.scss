@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
+  gap: 8rem;
   padding-top: 6rem;
 
   .intro__modeles {
@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: column;
     text-align: right;
+    padding-bottom: 3rem;
 
     @media screen and (max-width: 750px) {
       width: 80%;
@@ -24,28 +25,51 @@
     width: 80%;
     height: 22rem;
     border-radius: 2rem;
-    border-bottom-left-radius: 8rem;
+    border-bottom-left-radius: 11rem;
+    border-top-left-radius: 11rem;
     display: flex;
     justify-content: flex-end;
 
-    .objet__3d {
-      position: absolute;
-      bottom: -1.5rem;
-      left: -5rem;
-      width: 25rem;
-      height: 25rem;
-      border-radius: 50%;
-      background-color: rgb(50, 42, 73);
+    .img__3d {
+      width: 30%;
+      position: relative;
+      .modele__3d {
+        width: 700px;
+        height: auto;
+        position: absolute;
+        top: -12rem;
+        left: -12rem;
+      }
+
+      #livre__potion {
+        width: 600px;
+        left: -7rem;
+        top: -6rem;
+        @media screen and (max-width: 1445px) {
+          width: 500px;
+          top: -2rem;
+          left: -3rem;
+        }
+      }
     }
 
     .info3D {
       width: 65%;
-      margin: 3rem;
+      margin: 2rem;
       text-align: right;
 
       .titre__objet__3d {
         font-family: "Eger", sans-serif;
         font-size: 5rem;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 3rem;
+        letter-spacing: 2px;
+
+        @media screen and (max-width: 1000px) {
+          justify-content: center;
+          flex-direction: row;
+        }
       }
       p {
         padding-left: 6rem;
@@ -53,28 +77,60 @@
       a {
         i {
           font-size: 2rem;
+          z-index: 100;
+          position: relative;
+          opacity: 0.5;
+
+          &:hover {
+            opacity: 1;
+            text-shadow: 0 0 20px rgba(255, 254, 170, 0.7);
+          }
         }
       }
     }
   }
 
   #inverse {
+    border-bottom-right-radius: 11rem;
+    border-top-right-radius: 11rem;
     border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 8rem;
-    justify-content: flex-start;
+    border-top-left-radius: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
 
-    .objet__3d__inverse {
-      position: absolute;
-      bottom: -1.5rem;
-      right: -5rem;
-      width: 25rem;
-      height: 25rem;
-      border-radius: 50%;
-      background-color: rgb(50, 42, 73);
+    .img__3d {
+      width: 30%;
+      position: relative;
+      .modele__3d {
+        width: 700px;
+        position: absolute;
+        top: -12rem;
+        left: -12rem;
+      }
+
+      #chaudron {
+        width: 1000px;
+        top: -23rem;
+        left: -23rem;
+
+        @media screen and (max-width: 1445px) {
+          width: 850px;
+          top: -15rem;
+          left: -19rem;
+        }
+      }
+
+      #stand__livre {
+        transform: rotate(2deg);
+      }
     }
 
     .info3D {
       text-align: left;
+
+      .titre__objet__3d {
+        flex-direction: row;
+      }
 
       p {
         padding-left: 0;
@@ -94,13 +150,24 @@
         width: 24rem;
         height: 45rem;
         border-bottom-left-radius: 2rem;
+        border-top-right-radius: 11rem;
         display: flex;
         justify-content: space-around;
 
-        .objet__3d {
-          top: -3rem;
-          left: -0.5rem;
-          transform: scale(0.9);
+        .img__3d {
+          width: 0%;
+          position: relative;
+          .modele__3d {
+            width: 450px;
+            top: -6rem;
+            left: -2rem;
+          }
+
+          #livre__potion {
+            width: 400px;
+            left: -0.5rem;
+            top: -4rem;
+          }
         }
 
         .info3D {
@@ -117,11 +184,24 @@
       }
       #inverse {
         border-bottom-right-radius: 2rem;
+        border-top-right-radius: 11rem;
 
-        .objet__3d__inverse {
-          top: -3rem;
-          left: -0.5rem;
-          transform: scale(0.9);
+        .img__3d {
+          width: 0%;
+          position: relative;
+
+          #chaudron {
+            width: 520px;
+            top: -7rem;
+            left: -29rem;
+          }
+
+          #stand__livre {
+            transform: rotate(2deg);
+            width: 470px;
+            top: -8rem;
+            left: -27rem;
+          }
         }
 
         .info3D {
@@ -142,13 +222,22 @@
       width: 35rem;
       height: 45rem;
       border-bottom-left-radius: 2rem;
-      display: flex;
-      justify-content: space-around;
+      border-top-right-radius: 11rem;
 
-      .objet__3d {
-        top: -3rem;
-        left: 5rem;
-        transform: scale(1);
+      .img__3d {
+        width: 0%;
+        position: relative;
+        .modele__3d {
+          width: 550px;
+          top: -8rem;
+          left: 0rem;
+        }
+
+        #livre__potion {
+          width: 500px;
+          left: 2rem;
+          top: -4rem;
+        }
       }
 
       .info3D {
@@ -165,11 +254,24 @@
     }
     #inverse {
       border-bottom-right-radius: 2rem;
+      border-top-left-radius: 11rem;
 
-      .objet__3d__inverse {
-        top: -3rem;
-        left: 5rem;
-        transform: scale(1);
+      .img__3d {
+        width: 0%;
+        position: relative;
+
+        #chaudron {
+          width: 700px;
+          top: -12rem;
+          left: -40rem;
+        }
+
+        #stand__livre {
+          transform: rotate(2deg);
+          width: 550px;
+          top: -8rem;
+          left: -35rem;
+        }
       }
 
       .info3D {

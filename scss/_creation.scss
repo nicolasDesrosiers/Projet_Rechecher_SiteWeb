@@ -24,6 +24,8 @@ html {
           .titre {
             width: 100%;
             display: block;
+            text-shadow: 0 0 12px #b316d6, 0 0 18px #927419, 0 0 24px #563e1a,
+              0 0 30px #5c4d1d, 0 0 40px #e8bf09;
           }
 
           #banque__photos {
@@ -33,6 +35,10 @@ html {
             align-items: center;
             width: 810px;
             padding-top: 1rem;
+
+            @media screen and (max-width: 750px) {
+              width: 400px;
+            }
             .img__creation {
               width: 250px;
               height: 250px;
@@ -85,9 +91,11 @@ html {
         @media screen and (max-width: 750px) {
           div {
             width: 80%;
-            #banque__photos {
-              .img__creation {
-              }
+
+            .img__creation {
+              width: 300px;
+              height: 260px;
+              padding-top: 0;
             }
           }
         }
@@ -95,8 +103,6 @@ html {
         @media screen and (max-width: 1000px) {
           div {
             #banque__photos {
-              width: 600px;
-
               .img__creation {
                 width: 150px;
                 height: 150px;

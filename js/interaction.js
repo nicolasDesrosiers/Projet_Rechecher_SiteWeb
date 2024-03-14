@@ -1,36 +1,12 @@
-// import { Application } from '@splinetool/runtime';
+document.addEventListener("DOMContentLoaded", function () {
+  var links = document.querySelectorAll(".menu a");
 
-// const canvas = document.getElementById('canvas3d');
-// const app = new Application(canvas);
-// app.load('https://prod.spline.design/tiJHqFZeNXzCYCE3/scene.splinecode');
-
-// enlever le spline
-
-//window.onload = function () {
-// Get all instances of spline-viewer
-//var splineViewers = document.querySelectorAll('spline-viewer');
-
-// Iterate over each instance
-// splineViewers.forEach(function (splineViewer) {
-// Access the shadow root of each instance
-//var shadowRoot = splineViewer.shadowRoot;
-
-// Check if the shadow root and #logo element exist before removing
-//if (shadowRoot && shadowRoot.querySelector('#logo')) {
-// Remove the #logo element
-//shadowRoot.querySelector('#logo').remove();
-//}
-//});
-//}
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//___________________________________________ FONCTION ENLEVER LE LOGO SPLINE ___________________________________________//
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-window.onload = function () {
-  var shadowRoot = document.querySelector("spline-viewer").shadowRoot;
-  shadowRoot.querySelector("#logo").remove();
-};
+  links.forEach(function (link) {
+    link.addEventListener("click", function () {
+      document.getElementById("menu__toggle").checked = false;
+    });
+  });
+});
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //_____________________________________FONCTION POUR LE CAROUSSEL IMAGE CREATION ________________________________________//
@@ -129,7 +105,7 @@ function scrollIt(x) {
 
 // État initial en fonction de la largeur,
 // Montrer un peu des deux images pour que l'utilisateur puisse voir ce qui se passe
-scrollIt(150);
+scrollIt(350);
 
 // Répétitions du processus pour les événements tactiles
 document.querySelector(".scroller").addEventListener("touchstart", function () {

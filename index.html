@@ -20,11 +20,14 @@
 
   <body>
     <header id="header">
+      <input type="checkbox" id="menu__toggle" />
+      <label for="menu__toggle" class="menu__icon"
+        ><i class="fa-solid fa-bars"></i
+      ></label>
       <nav class="menu">
         <div class="logo">
           <a href="#header"><img src="medias/Logo.png" alt="LogoSite" /></a>
         </div>
-        <div class="menu-toggle"></div>
         <ul>
           <li>
             <i class="fa-solid fa-moon"></i><a href="#creation">CRÉATION</a>
@@ -41,7 +44,13 @@
       <div class="conteneur__titre">
         <div>THE LIGHT OF</div>
         <div class="moon">MOON</div>
+        <img
+          id="MoonVisage"
+          src="medias/Render_Projet_Final/Personnage_visage.png"
+          alt=""
+        />
       </div>
+
       <div class="synopsis">
         <p>
           <i class="fa-solid fa-quote-left"></i>
@@ -86,18 +95,25 @@
         <div>
           <div class="titre">CRÉATION</div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus
-            sit amet dictum sit amet justo donec enim diam. Ultrices dui sapien
-            eget mi proin. Augue lacus viverra vitae congue eu consequat. Augue
-            eget arcu dictum varius duis at consectetur. Nullam vehicula ipsum a
-            arcu cursus vitae congue mauris rhoncus. Lectus nulla at volutpat
-            diam ut venenatis. Egestas dui id ornare arcu odio. Auctor neque
-            vitae tempus quam. Nunc id cursus metus aliquam. Purus in mollis
-            nunc sed id. Aliquet bibendum enim facilisis gravida neque
-            convallis. In aliquam sem fringilla ut morbi tincidunt. Nunc congue
-            nisi vitae suscipit tellus mauris a diam. Integer vitae justo eget
-            magna.
+            Le processus créatif de modélisation d'un personnage et d'un
+            environnement dans Blender implique plusieurs étapes essentielles.
+            Tout d'abord, il est crucial de commencer par une phase de recherche
+            et de planification, où vous définissez les caractéristiques et le
+            style esthétique de votre personnage et de l'environnement. Cela
+            peut inclure des croquis, des références visuelles, et même des
+            moodboards pour vous aider à visualiser votre vision. J'ai choisi de
+            fusionner le style Pixar avec celui de Tim Burton pour mon projet.
+            Moon, mon personnage, incarne la communauté queer souvent
+            marginalisée.
+          </p>
+          <p>
+            J'ai décidé de la représenter sous les traits d'une sorcière, un
+            choix qui reflète également la perception négative de la société
+            envers les sorcières. Pour symboliser la nuit (Moon), j'ai
+            privilégié des couleurs froides telles que le bleu et le mauve.
+            Quant à l'environnement, j'ai imaginé une salle de potion ou de
+            magie, complète avec un chaudron et des livres, comme si le
+            personnage était en train de rechercher ou de concocter un sort.
           </p>
           <div class="img__creation principal">
             <i
@@ -120,104 +136,141 @@
     </section>
 
     <section id="modeles">
-      <!-- Script pour modeles 3D -->
-      <script
-        type="module"
-        src="https://unpkg.com/@splinetool/viewer@1.0.58/build/spline-viewer.js"
-      ></script>
       <div class="intro__modeles">
         <div class="titre">MODÈLES 3D</div>
         <p>
-          description de l'objet orem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Cursus sit amet dictum sit amet justo donec enim diam.
-          Ultrices dui sapien eget mi proin. Augue lacus viverra vitae congue eu
-          consequat. description de l'objet orem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Cursus sit amet dictum sit amet justo
-          donec enim diam. Ultrices dui sapien eget mi proin. Augue lacus
-          viverra vitae congue eu consequat.
+          Ensuite, vient la phase de modélisation proprement dite, où vous
+          utilisez les outils de modélisation 3D de Blender pour créer la
+          structure de base de votre personnage et de votre environnement. Cette
+          étape nécessite une attention particulière aux détails anatomiques
+          pour le personnage et à la composition spatiale pour l'environnement.
+          Une fois les formes de base créées, vous pouvez passer à la phase de
+          sculpting, où vous affinez les détails et donnez du caractère à votre
+          personnage et à votre environnement en ajoutant des textures, des
+          motifs et des reliefs.
         </p>
       </div>
 
       <div class="description">
-        <spline-viewer
-          class="objet__3d"
-          url="https://prod.spline.design/JcuBXkuLUV6RVhN4/scene.splinecode"
-        ></spline-viewer>
+        <div class="img__3d">
+          <img
+            src="./medias/Render_Projet_Final/Personnage.png"
+            alt="modele 3d du personnage"
+            class="modele__3d"
+            id="personnageMoon"
+          />
+        </div>
         <div class="info3D">
-          <div class="titre__objet__3d">Titre objet 3D</div>
+          <div class="titre__objet__3d">
+            Moon
+            <a
+              href="medias/Render_Projet_Final/Personnage.png"
+              download="Personnage.png"
+              ><i class="fa-solid fa-download"></i
+            ></a>
+          </div>
           <p>
-            description de l'objet orem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Cursus sit amet dictum sit amet justo donec
-            enim diam. Ultrices dui sapien eget mi proin. Augue lacus viverra
-            vitae congue eu consequat.
+            Moon est un jeune mage noir au style rebelle et déterminé. Avec ses
+            cheveux mauve pâle en bataille, un t-shirt crop top "Bad Witch", un
+            chandail en mesh, des pantalons baggy noirs et des chaussures Nike
+            modernes, il affiche son attitude non conventionnelle. Ses bijoux
+            ajoutent une touche d'esthétique personnelle, tandis qu'il tient un
+            orbe solaire dans ses mains, symbolisant son désir de
+            transformation. J'ai choisi ce look pour représenter son esprit
+            rebelle et sa quête de lumière.
           </p>
-
-          <a href="objet3D/chaudron.fbx" download="chaudron.fbx"
-            ><i class="fa-solid fa-download"></i
-          ></a>
         </div>
       </div>
 
       <div class="description" id="inverse">
-        <spline-viewer
-          class="objet__3d__inverse"
-          url="https://prod.spline.design/JcuBXkuLUV6RVhN4/scene.splinecode"
-        ></spline-viewer>
+        <div class="img__3d">
+          <img
+            src="./medias/Render_Projet_Final/chaudron.png"
+            alt="modele 3d chaudron"
+            class="modele__3d"
+            id="chaudron"
+          />
+        </div>
         <div class="info3D">
-          <div class="titre__objet__3d">Titre objet 3D</div>
+          <div class="titre__objet__3d">
+            Chaudron Magique
+            <a
+              href="medias/Render_Projet_Final/chaudron.png"
+              download="chaudron.png"
+              ><i class="fa-solid fa-download"></i
+            ></a>
+          </div>
           <p>
-            description de l'objet orem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Cursus sit amet dictum sit amet justo donec
-            enim diam. Ultrices dui sapien eget mi proin. Augue lacus viverra
-            vitae congue eu consequat.
+            Le chaudron de Moon est façonnée en fonte noire. À l'intérieur, un
+            liquide lumineux mauve émet une lueur douce et envoûtante, évoquant
+            le pouvoir et la sorcellerie. Sur le côté du chaudron, un sticker
+            représentant un chat, Shadow, le compagnon de Moon, ajoute une
+            touche personnelle et réconfortante à l'ensemble. Des vignes mortes
+            enlacées autour du chaudron portent des fleurs jaunes qui brillent
+            d'une lueur semblable à celle du soleil, symbolisant l'espoir et la
+            promesse de jours meilleurs.
           </p>
-          <a href="objet3D/chaudron.fbx" download="chaudron.fbx"
-            ><i class="fa-solid fa-download"></i
-          ></a>
         </div>
       </div>
 
       <div class="description">
-        <spline-viewer
-          class="objet__3d"
-          url="https://prod.spline.design/JcuBXkuLUV6RVhN4/scene.splinecode"
-        ></spline-viewer>
+        <div class="img__3d">
+          <img
+            src="./medias/Render_Projet_Final/Livre_potion.png"
+            alt="Pile livre et potion"
+            class="modele__3d"
+            id="livre__potion"
+          />
+        </div>
         <div class="info3D">
-          <div class="titre__objet__3d">Titre objet 3D</div>
+          <div class="titre__objet__3d">
+            Sortilèges
+            <a
+              href="medias/Render_Projet_Final/Livre_potion.png"
+              download="Livre_potion.png"
+              ><i class="fa-solid fa-download"></i
+            ></a>
+          </div>
           <p>
-            description de l'objet orem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Cursus sit amet dictum sit amet justo donec
-            enim diam. Ultrices dui sapien eget mi proin. Augue lacus viverra
-            vitae congue eu consequat.
+            La pile de livres de Moon offre une vision mystique et intrigante.
+            Les livres, de teinte froide, s'entassent avec une aura de
+            connaissance ancienne et de secrets magiques. Au sommet de cette
+            pile, une potion mauve reposant délicatement, ornée d'un motif de
+            lune, attire immédiatement le regard. Cette potion semble prête à
+            révéler des mystères enfouis et à dévoiler les pouvoirs cachés de la
+            nuit.
           </p>
-          <a href="objet3D/chaudron.fbx" download="chaudron.fbx"
-            ><i class="fa-solid fa-download"></i
-          ></a>
         </div>
       </div>
 
       <div class="description" id="inverse">
-        <spline-viewer
-          class="objet__3d__inverse"
-          url="https://prod.spline.design/JcuBXkuLUV6RVhN4/scene.splinecode"
-        ></spline-viewer>
+        <div class="img__3d">
+          <img
+            src="./medias/Render_Projet_Final/Stand_livrepng.png"
+            alt="stand et livre"
+            class="modele__3d"
+            id="stand__livre"
+          />
+        </div>
         <div class="info3D">
-          <div class="titre__objet__3d">Titre objet 3D</div>
+          <div class="titre__objet__3d">
+            Piédestal
+            <a
+              href="medias/Render_Projet_Final/Stand_livrepng.png"
+              download="Stand_livrepng.png"
+              ><i class="fa-solid fa-download"></i
+            ></a>
+          </div>
           <p>
-            description de l'objet orem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Cursus sit amet dictum sit amet justo donec
-            enim diam. Ultrices dui sapien eget mi proin. Augue lacus viverra
-            vitae congue eu consequat.
+            Le piédestal est fait de bois, de fer et de roche. Il soutient le
+            livre de sort pour changer la lune en soleil. Le livre ouvert sur le
+            stand révèle des écrits anciens représentant le soleil. Des plantes
+            soigneusement disposées autour du stand apportent une touche de
+            nature et de vitalité à cet autel mystique. Le contraste entre les
+            matériaux rustiques et la sagesse ancienne émanant des pages crée
+            une atmosphère magique et envoûtante, où l'espoir de changer la nuit
+            en jour semble palpable.
           </p>
-          <a href="objet3D/chaudron.fbx" download="chaudron.fbx"
-            ><i class="fa-solid fa-download"></i
-          ></a>
         </div>
       </div>
     </section>
@@ -226,90 +279,99 @@
       <div class="titre">BLENDER</div>
       <div class="intro__blender">
         <p>
-          description de l'objet orem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Cursus sit amet dictum sit amet justo donec enim diam.
-          Ultrices dui sapien eget mi proin. Augue lacus viverra vitae congue eu
-          consequat. description de l'objet orem ipsum dolor sit amet,
-          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Cursus sit amet dictum sit amet justo
-          donec enim diam. Ultrices dui sapien eget mi proin. Augue lacus
-          viverra vitae congue eu consequat.
+          J'ai choisi d'utiliser Blender pour mon projet car c'est un logiciel
+          polyvalent et puissant qui offre une gamme complète d'outils pour la
+          modélisation, l'animation et le rendu en 3D. Sa communauté active et
+          ses ressources en ligne abondantes m'ont permis de trouver du soutien
+          et des tutoriels pour développer mes compétences. De plus, Blender est
+          un logiciel open-source, ce qui signifie qu'il est accessible à tous
+          et offre une grande flexibilité pour personnaliser mes projets selon
+          mes besoins créatifs. En fin de compte, Blender était le choix évident
+          pour donner vie à mon personnage et à mon environnement avec précision
+          et créativité.
         </p>
       </div>
 
       <div class="technologies">
         <div class="outil">
-          <h3>Titre outil</h3>
+          <h3>Mode Sculpt - Draw</h3>
           <div>
             <p>
-              description de l'objet orem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Cursus sit amet dictum sit amet justo donec
-              enim diam. Ultrices dui sapien eget mi proin. Augue lacus viverra
-              vitae congue eu consequat.
+              L'outil Draw dans le mode Sculpt est un outil essentiel qui permet
+              de sculpter des formes en utilisant des mouvements similaires à
+              ceux d'un crayon ou d'un pinceau. Lorsque vous utilisez l'outil
+              Draw, vous pouvez créer des déformations en ajoutant ou en
+              retirant de la matière de votre modèle 3D de manière intuitive.
             </p>
-            <div class="gif__outil" data-modal="modal1"></div>
+            <div class="gif__outil" data-modal="modal1" id="gif__sculpt"></div>
             <div class="modal" id="modal1">
               <div class="modal-content">
                 <span class="close">&times;</span>
-                <p>Contenu de la boîte modale...</p>
+                <img src="medias/Gif_medias/Outil_Sculpt.gif" alt="" />
               </div>
             </div>
           </div>
         </div>
         <div class="outil">
-          <h3>Titre outil</h3>
+          <h3>Curve & Path</h3>
           <div>
             <p>
-              description de l'objet orem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Cursus sit amet dictum sit amet justo donec
-              enim diam. Ultrices dui sapien eget mi proin. Augue lacus viverra
-              vitae congue eu consequat.
+              Avec les courbes, vous pouvez créer une grande variété de formes
+              en utilisant des méthodes de modélisation non destructives. Vous
+              pouvez manipuler les points de contrôle pour ajuster la forme de
+              la courbe et ajouter des subdivisions pour obtenir plus de
+              détails. De plus, vous pouvez ajouter des profils pour donner de
+              l'épaisseur à la courbe et la convertir en une surface ou un objet
+              solide.
             </p>
-            <div class="gif__outil" data-modal="modal2"></div>
+            <div class="gif__outil" data-modal="modal2" id="gif__curve"></div>
             <div class="modal" id="modal2">
               <div class="modal-content">
                 <span class="close">&times;</span>
-                <p>Contenu de la boîte modale...</p>
+                <img src="medias/Gif_medias/Outil_Curve.gif" alt="" />
               </div>
             </div>
           </div>
         </div>
         <div class="outil">
-          <h3>Titre outil</h3>
+          <h3>Modificateur - Shrinkwrap</h3>
           <div>
             <p>
-              description de l'objet orem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Cursus sit amet dictum sit amet justo donec
-              enim diam. Ultrices dui sapien eget mi proin. Augue lacus viverra
-              vitae congue eu consequat.
+              Le modificateur Shrinkwrap est un outil utilisé pour déformer un
+              objet en le faisant épouser la surface d'un autre objet, appelé
+              "cible". Cela signifie que l'objet avec le Shrinkwrap appliqué
+              sera contraint à suivre la surface de la cible aussi étroitement
+              que possible, tout en conservant sa propre forme autant que
+              possible
             </p>
-            <div class="gif__outil" data-modal="modal3"></div>
+            <div
+              class="gif__outil"
+              data-modal="modal3"
+              id="gif__shrinkwrap"
+            ></div>
             <div class="modal" id="modal3">
               <div class="modal-content">
                 <span class="close">&times;</span>
-                <p>Contenu de la boîte modale...</p>
+                <img src="medias/Gif_medias/Outil_Shrinkwrap.gif" alt="" />
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="rendu">
+        <div id="rendu__final" class="titre">RENDU FINAL</div>
         <div class="wrapper">
           <div class="before">
             <img
               class="content-image"
-              src="medias/MoodBoard.png"
+              src="medias/RenduApres.png"
               draggable="false"
             />
           </div>
           <div class="after">
             <img
               class="content-image"
-              src="medias/interfaceBlender.png"
+              src="medias/RenduAvant.png"
               draggable="false"
             />
           </div>
@@ -341,6 +403,7 @@
             ><i class="fa-solid fa-envelope"></i
           ></a>
         </div>
+        <h2>Par Nicolas Carrière</h2>
       </div>
 
       <article id="wrap">

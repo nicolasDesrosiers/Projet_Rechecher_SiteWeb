@@ -11,6 +11,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 
   a {
     text-decoration: none;
@@ -25,17 +26,24 @@ html {
       font-family: "Lato", sans-serif;
       font-weight: 300;
       line-height: 1.5;
-    }
 
+      br {
+        padding: 1rem;
+      }
+    }
+    h3 {
+      font-family: "Lato", sans-serif;
+      font-weight: 700;
+      text-align: center;
+    }
     section {
       .titre {
         font-family: "Eger", sans-serif;
         font-size: 5rem;
-        color: $GrisFoncer;
-        -webkit-text-stroke: 1px;
-        -webkit-text-stroke-color: whitesmoke;
-
+        color: rgb(255, 255, 255);
         letter-spacing: 5px;
+        text-shadow: 0 0 12px #16d6d0, 0 0 18px #198092, 0 0 24px #1a3856,
+          0 0 30px #1d5b5c, 0 0 40px #09d5e8;
       }
     }
 

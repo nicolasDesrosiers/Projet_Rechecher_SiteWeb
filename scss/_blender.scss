@@ -5,22 +5,37 @@ body {
     justify-content: center;
     align-items: center;
     padding-top: 6rem;
+    background-image: url("../medias/Background.png");
 
     .titre {
       width: 60%;
+      text-shadow: 0 0 12px #b316d6, 0 0 18px #927419, 0 0 24px #563e1a,
+        0 0 30px #5c4d1d, 0 0 40px #e8bf09;
     }
 
     .intro__blender {
       width: 60%;
+      padding-bottom: 3rem;
     }
 
     .technologies {
       display: flex;
       width: 80%;
       gap: 1rem;
+      background-color: #0000009c;
+      padding: 3rem;
+      border-radius: 2rem;
 
       .outil {
         div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          p {
+            width: 80%;
+          }
+
           @media screen and (max-width: 750px) {
             flex-direction: column-reverse;
           }
@@ -36,12 +51,21 @@ body {
             background-color: rgba(0, 0, 0, 0.5);
 
             &-content {
-              background-color: #fefefe;
-              margin: 15% auto;
+              background-color: #1e1e1e;
+              margin: 10% auto;
               padding: 20px;
               border: 1px solid #888;
-              width: 80%;
+              width: 70%;
               height: 70%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              position: relative;
+
+              img {
+                width: 40rem;
+              }
             }
 
             & .close {
@@ -49,6 +73,9 @@ body {
               float: right;
               font-size: 28px;
               font-weight: bold;
+              position: absolute;
+              top: 1rem;
+              right: 1.5rem;
 
               &:hover,
               &:focus {
@@ -62,7 +89,21 @@ body {
           .gif__outil {
             width: 300px;
             height: 200px;
-            background-color: rgba(255, 255, 255, 0.35);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            cursor: pointer;
+          }
+
+          #gif__sculpt {
+            background-image: url("../medias/Gif_medias/Outil_Sculpt.gif");
+          }
+          #gif__curve {
+            background-image: url("../medias/Gif_medias/Outil_Curve.gif");
+          }
+
+          #gif__shrinkwrap {
+            background-image: url("../medias/Gif_medias/Outil_Shrinkwrap.gif");
           }
         }
       }
@@ -72,19 +113,27 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
+
+      #rendu__final {
+        font-size: 7rem;
+        width: 100%;
+        text-align: center;
+        margin-top: 4rem;
+      }
 
       .wrapper {
-        width: 900px;
-        height: 550px;
+        width: 1100px;
+        height: 820px;
         position: relative;
-        margin-top: 6rem;
+        margin-top: 1rem;
         overflow: hidden;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
           0 6px 6px rgba(0, 0, 0, 0.23);
 
         @media screen and (max-width: 1000px) {
-          width: 700px;
-          height: 425px;
+          width: 670px;
+          height: 500px;
         }
 
         .before,
@@ -218,8 +267,8 @@ body {
       }
       .rendu {
         .wrapper {
-          width: 440px;
-          height: 270px;
+          width: 500px;
+          height: 370px;
         }
       }
     }
