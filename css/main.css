@@ -1101,7 +1101,7 @@ body footer #wrap #lightings #five {
 }
 @font-face {
   font-family: "Eger";
-  src: url("../font/EGER_1.0/EGER-Regular.otf") format("otf");
+  src: url("../font/EGER_1.0/EGER-Regular.otf") format("opentype");
 }
 html {
   scroll-behavior: smooth;
