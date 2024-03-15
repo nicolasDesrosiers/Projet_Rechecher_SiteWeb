@@ -580,7 +580,7 @@ html body #creation .conteneur__principal__creation .principal .fleche__gauche {
 
 @font-face {
   font-family: "Eger";
-  src: url("/../font/EGER_1.0/EGER-Regular.otf") format("otf");
+  src: url("font\eGER_1.0\eGER-Regular.otf") format("otf");
 }
 body header {
   background-image: url("../medias/Background.png");
