@@ -1,8 +1,4 @@
 @charset "UTF-8";
-/* Styles généraux pour le body */
-body {
-  /* Styles pour la section #blender */
-}
 body #blender {
   display: flex;
   flex-direction: column;
@@ -10,10 +6,6 @@ body #blender {
   align-items: center;
   padding-top: 6rem;
   background-image: url("../medias/Background.png");
-  /* Styles pour les éléments .titre dans #blender */
-  /* Styles pour l'introduction dans #blender */
-  /* Styles pour les technologies dans #blender */
-  /* Styles pour le rendu final */
 }
 body #blender .titre {
   width: 60%;
@@ -30,14 +22,11 @@ body #blender .technologies {
   background-color: rgba(0, 0, 0, 0.6117647059);
   padding: 3rem;
   border-radius: 2rem;
-  /* Styles pour les outils dans les technologies */
 }
 body #blender .technologies .outil div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Styles pour les modales */
-  /* Styles pour les images GIF des outils */
 }
 body #blender .technologies .outil div p {
   width: 80%;
@@ -48,7 +37,7 @@ body #blender .technologies .outil div p {
   }
 }
 body #blender .technologies .outil div .modal {
-  display: none; /* Cachée par défaut */
+  display: none;
   position: fixed;
   z-index: 1000;
   left: 0;
@@ -110,8 +99,6 @@ body #blender .rendu {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* Styles pour le titre du rendu final */
-  /* Styles pour le wrapper du rendu final */
 }
 body #blender .rendu #rendu__final {
   font-size: 7rem;
@@ -198,14 +185,57 @@ body #blender .rendu .wrapper .scrolling {
   pointer-events: none;
   opacity: 1;
 }
-
-/* Media queries pour les tailles d'écran */
 @media screen and (max-width: 1200px) {
-  /* Styles pour #blender à une largeur d'écran maximale de 1200px */
+  body #blender .titre {
+    width: 80%;
+  }
+  body #blender .intro__blender {
+    width: 80%;
+  }
+  body #blender .technologies {
+    flex-direction: column;
+  }
+  body #blender .technologies .outil {
+    text-align: left;
+  }
+  body #blender .technologies .outil div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  body #blender .technologies .outil div p {
+    width: 80%;
+  }
 }
 @media screen and (max-width: 750px) {
-  /* Styles pour #blender à une largeur d'écran maximale de 750px */
+  body #blender .titre {
+    width: 80%;
+  }
+  body #blender .intro__blender {
+    width: 80%;
+  }
+  body #blender .technologies {
+    flex-direction: column;
+  }
+  body #blender .technologies .outil {
+    text-align: center;
+  }
+  body #blender .technologies .outil div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  body #blender .technologies .outil div p {
+    width: 100%;
+  }
+  body #blender .rendu .wrapper {
+    width: 500px;
+    height: 370px;
+  }
 }
+
 #modeles {
   background-image: url("../medias/Background.png");
   display: flex;

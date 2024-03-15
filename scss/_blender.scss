@@ -1,6 +1,4 @@
-/* Styles généraux pour le body */
 body {
-  /* Styles pour la section #blender */
   #blender {
     display: flex;
     flex-direction: column;
@@ -9,20 +7,17 @@ body {
     padding-top: 6rem;
     background-image: url("../medias/Background.png");
 
-    /* Styles pour les éléments .titre dans #blender */
     .titre {
       width: 60%;
       text-shadow: 0 0 12px #b316d6, 0 0 18px #927419, 0 0 24px #563e1a,
         0 0 30px #5c4d1d, 0 0 40px #e8bf09;
     }
 
-    /* Styles pour l'introduction dans #blender */
     .intro__blender {
       width: 60%;
       padding-bottom: 3rem;
     }
 
-    /* Styles pour les technologies dans #blender */
     .technologies {
       display: flex;
       width: 80%;
@@ -31,7 +26,6 @@ body {
       padding: 3rem;
       border-radius: 2rem;
 
-      /* Styles pour les outils dans les technologies */
       .outil {
         div {
           display: flex;
@@ -45,10 +39,8 @@ body {
           @media screen and (max-width: 750px) {
             flex-direction: column-reverse;
           }
-
-          /* Styles pour les modales */
           .modal {
-            display: none; /* Cachée par défaut */
+            display: none; // Cachée par défaut
             position: fixed;
             z-index: 1000;
             left: 0;
@@ -94,7 +86,6 @@ body {
             }
           }
 
-          /* Styles pour les images GIF des outils */
           .gif__outil {
             width: 300px;
             height: 200px;
@@ -118,14 +109,12 @@ body {
       }
     }
 
-    /* Styles pour le rendu final */
     .rendu {
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
 
-      /* Styles pour le titre du rendu final */
       #rendu__final {
         font-size: 7rem;
         width: 100%;
@@ -133,7 +122,6 @@ body {
         margin-top: 4rem;
       }
 
-      /* Styles pour le wrapper du rendu final */
       .wrapper {
         width: 1100px;
         height: 820px;
@@ -223,13 +211,66 @@ body {
       }
     }
   }
-}
 
-/* Media queries pour les tailles d'écran */
-@media screen and (max-width: 1200px) {
-  /* Styles pour #blender à une largeur d'écran maximale de 1200px */
-}
+  @media screen and (max-width: 1200px) {
+    #blender {
+      .titre {
+        width: 80%;
+      }
+      .intro__blender {
+        width: 80%;
+      }
+      .technologies {
+        flex-direction: column;
+        .outil {
+          text-align: left;
+          div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
 
-@media screen and (max-width: 750px) {
-  /* Styles pour #blender à une largeur d'écran maximale de 750px */
+            p {
+              width: 80%;
+            }
+
+            .gif__outil {
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 750px) {
+    #blender {
+      .titre {
+        width: 80%;
+      }
+      .intro__blender {
+        width: 80%;
+      }
+      .technologies {
+        flex-direction: column;
+        .outil {
+          text-align: center;
+          div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+
+            p {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .rendu {
+        .wrapper {
+          width: 500px;
+          height: 370px;
+        }
+      }
+    }
+  }
 }
