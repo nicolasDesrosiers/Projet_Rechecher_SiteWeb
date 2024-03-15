@@ -6,6 +6,12 @@
 @import "./header";
 @import "./footer";
 
+// Importation des polices
+@font-face {
+  font-family: "Eger";
+  src: url("../font/EGER_1.0/EGER-Regular.otf") format("otf");
+}
+
 // Styles de base pour HTML et body
 html {
   scroll-behavior: smooth;

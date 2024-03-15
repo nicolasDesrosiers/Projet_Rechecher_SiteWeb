@@ -1099,6 +1099,10 @@ body footer #wrap #lightings #five {
     box-shadow: 0 0 100px 15px #f4f6ad;
   }
 }
+@font-face {
+  font-family: "Eger";
+  src: url("../font/EGER_1.0/EGER-Regular.otf") format("otf");
+}
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
